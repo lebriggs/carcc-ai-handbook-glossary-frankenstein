@@ -11,7 +11,7 @@ A test implementation of the [CaRCC AI Facilitation Handbook](https://carcc.gith
 
 ## Live Test Site
 
-[The CaRCC AI Handbook Glossary - Frankenstein](https://lebriggs.github.io/carcc-ai-handbook-glossary-frankenstein/glossary/)
+[The CaRCC AI Handbook Glossary - Frankenstein](https://lebriggs.github.io/carcc-ai-handbook-glossary-frankenstein/)
 
 ## How The Glossary Works
 

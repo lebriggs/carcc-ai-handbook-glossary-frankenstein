@@ -1,4 +1,4 @@
-Glossary generation report — 2026-11-04
+Glossary generation report — 2026-11-05
 
 Glossary terms exported: 211
 Terms found in lifecycle chapters: 180
@@ -19,7 +19,7 @@ LIFECYCLE STAGE COUNTS
   Cross-Cutting Considerations: 45 glossary terms
 
 CURATED RELATIONSHIPS
-Parent–child relationships imported: 114
+Parent–child relationships imported: 113
 Peer relationships imported: 35
 Glossary terms with relationships: 145
   Alternative method / Alternative methods: 3
@@ -29,15 +29,15 @@ Glossary terms with relationships: 145
   Produces: 3
   Related: 13
   Supported by: 12
-  Techniques include: 18
+  Techniques include: 17
   Tools include: 23
   Types include: 31
   Visualizations include: 2
 
 DEFINITION CROSS-LINKS
-Automatic cross-links added: 91
+Automatic cross-links added: 92
 Definitions containing eligible cross-links: 73
-Curated relationship pairs found in definitions (excluded): 56
+Curated relationship pairs found in definitions (excluded): 55
 First-occurrence limit per definition: 1 (0 means unlimited)
 
 MANUAL STAGE ASSIGNMENTS
