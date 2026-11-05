@@ -9,9 +9,9 @@
 
 A test implementation of the [CaRCC AI Facilitation Handbook](https://carcc.github.io/ai-handbook/) with an integrated, interactive glossary. MkDocs and Material build the handbook; Vite and Ionic Core build the glossary at `/glossary/`. The first eligible mention of a term on each handbook page links to its glossary card and shows a short tooltip on desktop. Readers can search glossary terms, filter by AI lifecycle stage, and follow links between related concepts. The original Markdown glossary remains the source of all definitions.
 
-## Live Site
+## Live Test Site
 
-[CaRCC AI Handbook Glossary Frankenstein](https://github.com/lebriggs/carcc-ai-handbook-glossary-frankenstein)
+[The CaRCC AI Handbook Glossary - Frankenstein](https://lebriggs.github.io/carcc-ai-handbook-glossary-frankenstein/glossary/)
 
 ## How The Glossary Works
 

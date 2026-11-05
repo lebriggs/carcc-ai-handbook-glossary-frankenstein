@@ -293,6 +293,7 @@ list.addEventListener("click", (event) => {
   }
   if (selectedStages.has(id)) selectedStages.delete(id);
   else selectedStages.add(id);
+  clearNavigationHighlight();
   applyFilters();
 
   // Keep the clicked chip in place when earlier cards appear or disappear.
