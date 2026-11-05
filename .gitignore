@@ -1,0 +1,12 @@
+# Python cache
+__pycache__/
+
+# Vite documentation
+vite/documentation/
+
+# Vite dependencies and build output
+vite/node_modules/
+vite/dist/
+
+# MkDocs generated site
+mkdocs/site/

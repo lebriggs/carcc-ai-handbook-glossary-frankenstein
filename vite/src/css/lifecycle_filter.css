@@ -1,0 +1,71 @@
+/* FilteringFlow hides nonmatching Ionic columns without rearranging cards. */
+.glossary-card-grid ion-col.filtering-item.filtered,
+.glossary-letter-section[hidden],
+.glossary-filter-summary[hidden] {
+  display: none;
+}
+
+.glossary-intro {
+  margin: 0 auto 1.25rem;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Bring the selected filters close to the A–Z index without changing its default spacing. */
+.glossary-index.glossary-index-with-filters {
+  margin-bottom: 1rem;
+}
+
+/* Small status row only appears after selecting a lifecycle stage. */
+.glossary-filter-summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 auto 1.5rem;
+  color: #444;
+}
+
+.glossary-filter-selected-stages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.glossary-filter-selected-stages ion-chip {
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+  border-color: var(--ion-color-warning);
+  border-width: 2px;
+  --background: transparent;
+  background: transparent;
+}
+
+.glossary-filter-selected-stages ion-label {
+  white-space: normal;
+}
+
+/* Inactive stage: stronger blue outline; active stage: full-strength yellow. */
+.glossary-stage-chips ion-chip {
+  cursor: pointer;
+  border-color: var(--ion-color-primary-shade);
+  border-width: 1.5px;
+  --background: transparent;
+  background: transparent !important;
+}
+
+.glossary-stage-chips ion-chip[aria-pressed="true"] {
+  border-color: var(--ion-color-warning);
+  border-width: 2px;
+}
+
+/* Prevent Ionic's pale-blue focus/pressed fill without hiding keyboard focus. */
+.glossary-stage-chips ion-chip:focus-visible {
+  outline: 2px solid var(--ion-color-primary-shade);
+  outline-offset: 2px;
+}

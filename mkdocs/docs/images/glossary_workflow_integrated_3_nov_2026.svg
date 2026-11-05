@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="1360" viewBox="0 0 1050 1360">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 9 5 L 0 10 z" fill="#0b0b0b"/></marker></defs>
+<rect width="1050" height="1360" fill="white"/>
+<text x="30" y="49" font-family="DejaVu Sans Mono, monospace" font-size="25" font-weight="bold" fill="#0b0b0b">Glossary Workflow</text>
+<text x="70" y="117" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">mkdocs/docs/glossary.md</text>
+<text x="70" y="140" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">(canonical terms + full definitions)</text>
+<polyline points="200,153 200,302" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrow)"/>
+<text x="70" y="332" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">mkdocs/tools/variant_scanner.py</text>
+<text x="70" y="355" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">finds case + plural variants</text>
+<text x="70" y="378" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">in chapters + definitions</text>
+<text x="535" y="278" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">mkdocs/tools/inputs/</text>
+<text x="535" y="301" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">term_exceptions.txt</text>
+<text x="535" y="324" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">(manually added variants)</text>
+<text x="535" y="397" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">handbook Markdown chapters</text>
+<polyline points="527,299 500,299" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="527,392 500,392" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="500,299 500,392" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="500,346 443,346" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrow)"/>
+<polyline points="200,386 200,440" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrow)"/>
+<text x="70" y="472" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="bold" fill="#0b0b0b">mkdocs/tools/outputs/variant_terms.txt</text>
+<text x="70" y="495" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">(generated: exact variants found</text>
+<text x="70" y="518" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">in source text)</text>
+<polyline points="200,533 200,559" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrow)"/>
+<text x="70" y="592" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">mkdocs/tools/generate_tooltips.py</text>
+<polyline points="200,608 200,650" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrow)"/>
+<text x="70" y="683" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="bold" fill="#0b0b0b">mkdocs/includes/glossary_tooltips.md</text>
+<text x="70" y="706" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">(generated: short definitions + variants)</text>
+<polyline points="200,725 200,767" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrow)"/>
+<text x="70" y="801" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">mkdocs/hooks/glossary_links.py</text>
+<text x="70" y="824" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">links each term's first occurrence</text>
+<text x="70" y="847" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">abbr displays the generated tooltips</text>
+<polyline points="200,871 200,1026" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrow)"/>
+<text x="70" y="1058" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">MkDocs build</text>
+<polyline points="200,1071 200,1154" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrow)"/>
+<text x="70" y="1187" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="bold" fill="#4057D9">built handbook pages</text>
+<text x="70" y="1210" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">(glossary links + tooltips)</text>
+<text x="70" y="1270" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">mkdocs/docs/javascripts/glossary_tooltips.js</text>
+<text x="70" y="1293" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">(browser: clears lingering tooltips</text>
+<text x="70" y="1316" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">after Back/Forward navigation)</text>
+<polyline points="440,466 490,466" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
+<text x="535" y="555" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">mkdocs/docs/glossary.md</text>
+<text x="535" y="607" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">mkdocs/docs/lifecycle chapters</text>
+<text x="535" y="659" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">vite/tools/inputs/manual_stages.txt</text>
+<text x="535" y="711" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">vite/tools/inputs/term_relationships.xlsx</text>
+<polyline points="527,549 490,549" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="527,601 490,601" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="527,653 490,653" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="527,705 490,705" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="490,466 490,745" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="490,745 528,745" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrow)"/>
+<text x="535" y="765" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">vite/tools/generate_glossary_json.py</text>
+<text x="535" y="788" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">builds card data + validation report</text>
+<polyline points="650,816 650,825" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="595,825 845,825" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
+<polyline points="595,825 595,855" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrow)"/>
+<polyline points="845,825 845,855" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrow)"/>
+<text x="535" y="890" font-family="DejaVu Sans Mono, monospace" font-size="14" font-weight="normal" fill="#0b0b0b">vite/tools/outputs/</text>
+<text x="535" y="918" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="bold" fill="#0b0b0b">glossary.json</text>
+<text x="535" y="941" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">(card data)</text>
+<text x="773" y="890" font-family="DejaVu Sans Mono, monospace" font-size="14" font-weight="normal" fill="#0b0b0b">vite/tools/outputs/</text>
+<text x="773" y="918" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="bold" fill="#0b0b0b">glossary_report.txt</text>
+<text x="773" y="941" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">(validation report)</text>
+<polyline points="595,953 595,987" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrow)"/>
+<text x="535" y="1020" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">Vite build</text>
+<text x="535" y="1043" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">writes mkdocs/docs/glossary/</text>
+<polyline points="650,1057 650,1154" fill="none" stroke="#0b0b0b" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter" marker-end="url(#arrow)"/>
+<text x="535" y="1187" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="bold" fill="#4057D9">built integrated glossary</text>
+<text x="535" y="1210" font-family="DejaVu Sans Mono, monospace" font-size="16" font-weight="normal" fill="#0b0b0b">(published by MkDocs at /glossary/)</text>
+</svg>

@@ -1,0 +1,80 @@
+/* Custom styling for the CaRCC AI Facilitation Handbook. */
+
+/* STYLE GLOSSARY */
+
+/* GLOSSARY TERMS IN THE TEXT */
+
+/* Glossary terms are wrapped in <abbr> by the abbr extension.
+   Material's default underline is 1px dotted at low opacity, which is
+   too faint to read as interactive. This code makes it more visible. */
+
+.md-typeset abbr {
+  border-bottom: 1.5px dashed #4057d9;
+}
+
+/* Safari and DuckDuckGo on macOS: use 2px because fractional borders render thinly.
+   This feature check targets WebKit; it also applies to Safari on iOS. */
+@supports (hanging-punctuation: first) {
+  .md-typeset abbr {
+    border-bottom-width: 2px;
+  }
+}
+
+/* Increase the size of the tooltip text. */
+
+.md-tooltip2__inner {
+  font-size: 0.8rem;
+}
+
+/* Keep clickable glossary terms styled like glossary terms, not regular links. */
+
+.md-typeset a.glossary-link,
+.md-typeset a.glossary-link:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* THE GLOSSARY PAGE */
+
+/* Increase the size of the text of the A–Z index on the glossary.md page. */
+.glossary-index {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* Increase the weight of the A–Z letter headings and add a divider line, on the glossary.md page. */
+h1.glossary-page ~ h2 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Highlight the glossary term that a reader followed a link to. */
+h1.glossary-page ~ h3:target {
+    border-left: 3px solid #4057D9;
+    margin-left: -0.5rem;
+    padding-left: 0.5rem;
+}
+
+/* MOBILE */
+
+/* Turn off the tooltip on devices that do not support hover.
+   Tapping a term goes straight to the glossary entry. */
+@media (hover: none) {
+  .md-tooltip2 {
+    display: none;
+  }
+}
+
+/* Keep the glossary target highlight inside the content area on small screens. */
+@media (max-width: 600px) {
+  h1.glossary-page ~ h3:target {
+    margin-left: 0;
+    padding-left: 0.5rem;
+  }
+}
+
+/* END GLOSSARY STYLING. */

@@ -1,0 +1,48 @@
+site_name: The CaRCC AI Facilitation Handbook - Frankenstein
+
+watch:
+  - includes
+
+hooks:
+  - hooks/glossary_links.py
+
+nav:
+  - Introduction: index.md
+  - Problem Definition & Planning: problem-definition.md
+  - Data Preparation: data-preparation.md
+  - Model Selection & Development: model-selection.md
+  - Model Training & Tuning: model-training.md
+  - Benchmarking, QC & Optimization: benchmarking.md
+  - Model Application: model-application.md
+  - Results & Reporting: results-reporting.md
+  - Cross-Cutting Considerations: cross-cutting.md
+  - Glossary Test Cases: tests.md
+  - Glossary: glossary/index.html
+
+theme:
+  name: material
+  features:
+    - content.tooltips
+
+markdown_extensions:
+  - abbr
+  - attr_list
+  - footnotes
+  - pymdownx.snippets:
+      auto_append:
+        - includes/glossary_tooltips.md
+
+plugins:
+  - search
+  - bibtex:
+      bib_file: refs.bib
+      bib_by_default: true
+
+extra_css:
+  - stylesheets/style.css
+
+extra_javascript:
+  - javascripts/glossary_tooltips.js
+
+exclude_docs: |
+  /glossary.md  

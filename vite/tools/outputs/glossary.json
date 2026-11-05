@@ -1,0 +1,4685 @@
+{
+  "generated_on": "2026-11-04",
+  "terms": [
+    {
+      "term": "Accelerator",
+      "definition": "Specialized hardware, such as a GPU or other device, designed to speed up particular computations.",
+      "stages": [
+        "Data Preparation",
+        "Model Application"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2",
+        "id_6"
+      ],
+      "relationships": [
+        {
+          "label": "Types include",
+          "term": "GPU",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Access control",
+      "definition": "Policies, technologies, and procedures that determine who or what may access resources, under which conditions, and what actions are permitted. Requirements are usually established during project planning, based on data sensitivity and applicable agreements.",
+      "stages": [
+        "Problem Definition & Planning",
+        "Data Preparation",
+        "Benchmarking, QC & Optimization",
+        "Model Application",
+        "Results & Reporting",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1",
+        "id_2",
+        "id_5",
+        "id_6",
+        "id_7",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Part of",
+          "term": "Secure enclave",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "AI problem formulation",
+      "definition": "The translation of a research question into a specific AI or machine learning task, such as classification, regression, segmentation, or generation. Formulation determines what data and labels are required and which models and evaluation metrics are appropriate.",
+      "stages": [
+        "Problem Definition & Planning"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "AI/ML workflow",
+      "definition": "An AI/ML (artificial intelligence or machine learning) workflow is the sequence of activities used to develop and apply an AI or machine learning system. These activities include [data preparation](#data-preparation), model development, training, evaluation, and reporting.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Annotation",
+      "definition": "The process of adding labels, categories, metadata, or other descriptive information to data.",
+      "stages": [
+        "Data Preparation",
+        "Model Application",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2",
+        "id_6",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Part of",
+          "term": "Data preparation",
+          "sort_order": 1
+        },
+        {
+          "label": "Produces",
+          "term": "Metadata",
+          "sort_order": 2
+        },
+        {
+          "label": "Tools include",
+          "term": "Label Studio",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Anonymization",
+      "definition": "Processing data so that individuals cannot reasonably be identified, subject to the limitations of the technique and available external information.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Technique for",
+          "term": "Data privacy",
+          "sort_order": 2
+        },
+        {
+          "label": "Tools include",
+          "term": "ARX",
+          "sort_order": 2
+        },
+        {
+          "label": "Compare to",
+          "term": "Data masking",
+          "sort_order": 4
+        },
+        {
+          "label": "Compare to",
+          "term": "De-identification",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "Apache Spark",
+      "definition": "A distributed computing framework used to process large [datasets](#dataset) across multiple machines or cores.",
+      "stages": [
+        "Data Preparation",
+        "Model Application"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2",
+        "id_6"
+      ],
+      "relationships": [
+        {
+          "label": "Used for",
+          "term": "Distributed processing",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "ARX",
+      "definition": "A software tool for anonymizing and analyzing the privacy risks of structured [datasets](#dataset).",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Used for",
+          "term": "Anonymization",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Auditable infrastructure",
+      "definition": "Infrastructure designed so that its configuration, operations, access, and changes can be independently verified through records, logs, and documented controls. An auditor should be able to determine:\n\n- Who performed an action?\n\n- When was it performed?\n\n- What was changed?\n\n- Why was the change made?\n\n- Was it authorized?\n\n- Can the system's state be reconstructed?",
+      "stages": [
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Cross-Cutting Considerations",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_8"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "AutoML",
+      "definition": "Automated machine learning (AutoML) uses tools and services that automate parts of model development, such as [hyperparameter](#hyperparameter) search, architecture selection, or preprocessing choices. AutoML can reduce manual effort but may consume large amounts of computing time.",
+      "stages": [
+        "Model Training & Tuning"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_4"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Baseline model",
+      "definition": "A model used as a reference for comparing the performance of other models. Baseline models help researchers determine whether a new model or approach provides better results.",
+      "stages": [
+        "Benchmarking, QC & Optimization"
+      ],
+      "first_stage": "Benchmarking, QC & Optimization",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_5"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Batch processing",
+      "definition": "Running computing tasks without continuous user interaction, often through a job scheduler. In [HPC](#hpc) environments, training runs and other large workloads may be queued as individual jobs or job arrays.",
+      "stages": [
+        "Model Application"
+      ],
+      "first_stage": "Model Application",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_6"
+      ],
+      "relationships": [
+        {
+          "label": "Tools include",
+          "term": "Job scheduler",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Batch size",
+      "definition": "The number of training examples a model processes before its parameters are updated. Larger batches require more memory on each [GPU](#gpu) but can make fuller use of the available hardware.",
+      "stages": [
+        "Model Training & Tuning",
+        "Benchmarking, QC & Optimization",
+        "Model Application"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_4",
+        "id_5",
+        "id_6"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Hyperparameter",
+          "sort_order": 1
+        },
+        {
+          "label": "Related",
+          "term": "Gradient accumulation",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "Bayesian optimization",
+      "definition": "A [hyperparameter](#hyperparameter) search that builds a probabilistic model of how settings affect performance and uses it to choose which combination to try next. The aim is to reach good settings with fewer training runs.",
+      "stages": [
+        "Model Training & Tuning"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_4"
+      ],
+      "relationships": [
+        {
+          "label": "Technique for",
+          "term": "HPO",
+          "sort_order": 2
+        },
+        {
+          "label": "Alternative method / Alternative methods",
+          "term": "Grid search",
+          "sort_order": 3
+        },
+        {
+          "label": "Alternative method / Alternative methods",
+          "term": "Random search",
+          "sort_order": 3
+        }
+      ]
+    },
+    {
+      "term": "Benchmark dataset",
+      "definition": "A dataset used to evaluate and compare AI models under consistent conditions. Benchmark datasets allow researchers to measure [model performance](#model-performance) using the same inputs and evaluation metrics.",
+      "stages": [
+        "Benchmarking, QC & Optimization"
+      ],
+      "first_stage": "Benchmarking, QC & Optimization",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_5"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Dataset",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Benchmarking",
+      "definition": "The systematic evaluation and comparison of machine learning or AI models using specified [datasets](#dataset), tasks, metrics, and evaluation conditions. Benchmarking helps determine how models or model versions perform under comparable conditions.",
+      "stages": [
+        "Model Selection & Development",
+        "Benchmarking, QC & Optimization",
+        "Results & Reporting",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3",
+        "id_5",
+        "id_7",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Model evaluation",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "BERT",
+      "definition": "BERT (Bidirectional Encoder Representations from Transformers) is a transformer-based language [model architecture](#model-architecture) that can be adapted for tasks such as text classification and sentiment analysis.",
+      "stages": [
+        "Data Preparation",
+        "Model Selection & Development",
+        "Model Training & Tuning",
+        "Benchmarking, QC & Optimization"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2",
+        "id_3",
+        "id_4",
+        "id_5"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Transformer",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Bias",
+      "definition": "Systematic distortion or error in data, methods, or model results that can affect accuracy or produce unfair outcomes. Bias can arise during collection, preprocessing, training, evaluation, or use.",
+      "stages": [
+        "Data Preparation",
+        "Model Selection & Development",
+        "Model Training & Tuning",
+        "Benchmarking, QC & Optimization",
+        "Model Application",
+        "Results & Reporting",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2",
+        "id_3",
+        "id_4",
+        "id_5",
+        "id_6",
+        "id_7",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Types include",
+          "term": "Data bias",
+          "sort_order": 1
+        },
+        {
+          "label": "Checked during",
+          "term": "Model evaluation",
+          "sort_order": 2
+        },
+        {
+          "label": "Checked during",
+          "term": "Quality assurance",
+          "sort_order": 2
+        },
+        {
+          "label": "Related",
+          "term": "Fairness assessment",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "Bokeh",
+      "definition": "A Python library for creating interactive, browser-based visualizations that allow researchers to explore [datasets](#dataset) and examine patterns and relationships.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Used for",
+          "term": "Data visualization",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Bottleneck",
+      "definition": "A component or step that limits the overall speed, scale, or performance of a workflow.",
+      "stages": [
+        "Data Preparation",
+        "Model Training & Tuning",
+        "Benchmarking, QC & Optimization",
+        "Model Application"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2",
+        "id_4",
+        "id_5",
+        "id_6"
+      ],
+      "relationships": [
+        {
+          "label": "Checked during",
+          "term": "Performance profiling",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Calibration plot",
+      "definition": "A plot used to assess how closely a model’s predicted probabilities correspond to observed outcomes. A well-calibrated model assigns probabilities that approximate how often the predicted event actually occurs.",
+      "stages": [
+        "Results & Reporting"
+      ],
+      "first_stage": "Results & Reporting",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_7"
+      ],
+      "relationships": [
+        {
+          "label": "Used for",
+          "term": "Model evaluation",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "CARE",
+      "definition": "Guiding principles for Indigenous data governance that emphasize Collective Benefit, Authority to Control, Responsibility, and Ethics (CARE). Released by the Global Indigenous Data Alliance in 2019, the principles inform decisions about how Indigenous data is collected, managed, accessed, shared, and reused.",
+      "stages": [
+        "Problem Definition & Planning",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Supports",
+          "term": "Indigenous data governance",
+          "sort_order": 2
+        },
+        {
+          "label": "Compare to",
+          "term": "FAIR principles",
+          "sort_order": 4
+        },
+        {
+          "label": "Compare to",
+          "term": "OCAP®",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "Categorical data",
+      "definition": "Data representing distinct categories, groups or labels, such as species, departments, or experimental conditions.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Data type",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Checkpointing",
+      "definition": "Periodically saving a model's current parameters and training state to storage. Checkpoints allow a training job to resume after a failure or a scheduler time limit, and they can require substantial storage capacity.",
+      "stages": [
+        "Model Training & Tuning"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_4"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Cloud egress",
+      "definition": "Data transferred out of a cloud provider’s infrastructure, often subject to usage charges.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Community governance",
+      "definition": "A framework of rules, decision-making processes, roles, and shared norms that a group uses to manage itself and achieve common goals. Community governance emphasizes participation, transparency, shared responsibility, and stakeholder engagement in decision-making.",
+      "stages": [
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Cross-Cutting Considerations",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_8"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Completeness",
+      "definition": "The extent to which required records, fields, or observations are present.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Part of",
+          "term": "Data quality",
+          "sort_order": 1
+        },
+        {
+          "label": "Checked during",
+          "term": "Quality assurance",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Compute resource plan",
+      "definition": "An estimate of the computing capacity a project will require, covering [CPU](#cpu) and [GPU](#gpu) needs, memory, storage, data movement, job scheduling, and expected cost. The plan is also where choices among local, campus, cloud, and [hybrid infrastructure](#hybrid-infrastructure) are documented.",
+      "stages": [
+        "Problem Definition & Planning"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Consistency",
+      "definition": "The extent to which data follows the same definitions, formats, units, and rules throughout a [dataset](#dataset).",
+      "stages": [
+        "Data Preparation",
+        "Benchmarking, QC & Optimization"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2",
+        "id_5"
+      ],
+      "relationships": [
+        {
+          "label": "Part of",
+          "term": "Data quality",
+          "sort_order": 1
+        },
+        {
+          "label": "Checked during",
+          "term": "Quality assurance",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Container",
+      "definition": "A portable, packaged software environment containing code, dependencies, and configuration needed to run an application or workflow consistently across computing systems. Containers help make computational work reproducible.",
+      "stages": [
+        "Data Preparation",
+        "Benchmarking, QC & Optimization",
+        "Model Application",
+        "Results & Reporting",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2",
+        "id_5",
+        "id_6",
+        "id_7",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Produced by",
+          "term": "Containerization",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Containerization",
+      "definition": "Packaging software together with the dependencies it needs so that it runs consistently across computing systems. Planning for containers early makes it easier to move work between local, campus, and cloud resources.",
+      "stages": [
+        "Problem Definition & Planning",
+        "Model Application"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1",
+        "id_6"
+      ],
+      "relationships": [
+        {
+          "label": "Produces",
+          "term": "Container",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Controlled-access deposit",
+      "definition": "The submission of research data to a [repository](#repository) where access is restricted to approved users rather than made openly available. Access is governed by a review process and data-use conditions, which may reflect participant consent and institutional requirements.",
+      "stages": [
+        "Results & Reporting"
+      ],
+      "first_stage": "Results & Reporting",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_7"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Convergence",
+      "definition": "The point at which further training produces little or no improvement in a model's loss or evaluation metrics. Slow or unstable convergence often signals a problem with the [hyperparameters](#hyperparameter), the data, or the training setup.",
+      "stages": [
+        "Model Training & Tuning"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_4"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Correlation",
+      "definition": "A statistical relationship indicating how two variables tend to change in relation to one another. Correlation does not necessarily imply causation.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Count matrix",
+      "definition": "A table showing raw integer counts of sequencing reads or molecules mapped to genomic [features](#feature). The rows and columns represent entities such as genes and samples, and the cells contain observed counts.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "CPU",
+      "definition": "A central processing unit (CPU) is the general-purpose processor used to execute program instructions.",
+      "stages": [
+        "Problem Definition & Planning",
+        "Data Preparation",
+        "Model Training & Tuning",
+        "Benchmarking, QC & Optimization",
+        "Model Application"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1",
+        "id_2",
+        "id_4",
+        "id_5",
+        "id_6"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "CUI",
+      "definition": "Controlled unclassified information (CUI) is U.S. federal information that is not classified but requires safeguarding or controls on its handling or dissemination under applicable rules. Projects involving controlled unclassified information (CUI) may require approved computing environments and documented protective controls.",
+      "stages": [
+        "Problem Definition & Planning",
+        "Data Preparation",
+        "Model Application",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1",
+        "id_2",
+        "id_6",
+        "id_8"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Custodianship",
+      "definition": "The responsibility for the day-to-day management, protection, and operation of an asset on behalf of its owner. In data governance, information security, and research computing, a custodian is not usually the owner of the data or system. Instead, the custodian is responsible for implementing and maintaining the controls that protect it.",
+      "stages": [
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Cross-Cutting Considerations",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_8"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Data acquisition",
+      "definition": "Obtaining data from sources such as instruments, databases, sensors, applications, archives, or external [repositories](#repository).",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Part of",
+          "term": "Data preparation",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Data aggregation",
+      "definition": "Combining individual-level records into summaries or groups to reduce detail and, potentially, privacy risk.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Data transformation",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Data augmentation",
+      "definition": "Artificially expanding a training [dataset](#dataset) by modifying or combining existing data, such as altering images, audio, or video, without collecting new real-world data.",
+      "stages": [
+        "Benchmarking, QC & Optimization"
+      ],
+      "first_stage": "Benchmarking, QC & Optimization",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_5"
+      ],
+      "relationships": [
+        {
+          "label": "Part of",
+          "term": "Data preparation",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Data bias",
+      "definition": "A systematic distortion in data that can produce misleading analyses or unfair model behavior.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Bias",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Data cleaning",
+      "definition": "Identifying and correcting problems such as duplicates, missing values, outliers, formatting issues, and errors.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Part of",
+          "term": "Data preparation",
+          "sort_order": 1
+        },
+        {
+          "label": "Checks for",
+          "term": "Duplicate",
+          "sort_order": 2
+        },
+        {
+          "label": "Checks for",
+          "term": "Formatting issue",
+          "sort_order": 2
+        },
+        {
+          "label": "Checks for",
+          "term": "Missing value",
+          "sort_order": 2
+        },
+        {
+          "label": "Checks for",
+          "term": "Outlier",
+          "sort_order": 2
+        },
+        {
+          "label": "Tools include",
+          "term": "OpenRefine",
+          "sort_order": 2
+        },
+        {
+          "label": "Related",
+          "term": "Data transformation",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "Data distribution",
+      "definition": "The way values or observations are spread across a [dataset](#dataset).",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Data management plan",
+      "definition": "A data management plan (DMP) describes how data will be collected, stored, protected, shared, and retained over the life of a project and often beyond it. Funders frequently require a DMP, and it drives the storage, transfer, and backup resources a project will need.",
+      "stages": [
+        "Model Selection & Development"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Data masking",
+      "definition": "Concealing sensitive values while preserving enough structure for a permitted use.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Data transformation",
+          "sort_order": 1
+        },
+        {
+          "label": "Technique for",
+          "term": "Data privacy",
+          "sort_order": 2
+        },
+        {
+          "label": "Compare to",
+          "term": "Anonymization",
+          "sort_order": 4
+        },
+        {
+          "label": "Compare to",
+          "term": "De-identification",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "Data pipeline",
+      "definition": "A sequence of automated or semi-automated steps that moves and transforms data from its source to its destination or analysis-ready form.",
+      "stages": [
+        "Data Preparation",
+        "Model Training & Tuning",
+        "Benchmarking, QC & Optimization"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2",
+        "id_4",
+        "id_5"
+      ],
+      "relationships": [
+        {
+          "label": "Related",
+          "term": "Pipeline monitoring",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "Data preparation",
+      "definition": "The process of acquiring, cleaning, transforming, exploring, and curating [raw data](#raw-data) for analysis or machine learning.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Parts include",
+          "term": "Annotation",
+          "sort_order": 1
+        },
+        {
+          "label": "Parts include",
+          "term": "Data acquisition",
+          "sort_order": 1
+        },
+        {
+          "label": "Parts include",
+          "term": "Data augmentation",
+          "sort_order": 1
+        },
+        {
+          "label": "Parts include",
+          "term": "Data cleaning",
+          "sort_order": 1
+        },
+        {
+          "label": "Parts include",
+          "term": "Data transformation",
+          "sort_order": 1
+        },
+        {
+          "label": "Parts include",
+          "term": "Data validation",
+          "sort_order": 1
+        },
+        {
+          "label": "Parts include",
+          "term": "Exploratory data analysis",
+          "sort_order": 1
+        },
+        {
+          "label": "Parts include",
+          "term": "Feature engineering",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Data privacy",
+      "definition": "Protecting information about individuals from inappropriate identification, disclosure, or use during data collection, analysis, and sharing. Techniques for protecting data can help reduce privacy risks, but may not eliminate them.",
+      "stages": [
+        "Model Selection & Development"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3"
+      ],
+      "relationships": [
+        {
+          "label": "Techniques include",
+          "term": "Anonymization",
+          "sort_order": 2
+        },
+        {
+          "label": "Techniques include",
+          "term": "Data masking",
+          "sort_order": 2
+        },
+        {
+          "label": "Techniques include",
+          "term": "De-identification",
+          "sort_order": 2
+        },
+        {
+          "label": "Techniques include",
+          "term": "Differential privacy",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Data provenance",
+      "definition": "The documented history of data, including its origins, transformations, and movements throughout its lifecycle. Provenance records also capture who accessed or modified the data and how it was used. This [metadata](#metadata) helps users assess the data’s history, authenticity, and trustworthiness.",
+      "stages": [
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Cross-Cutting Considerations",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Supports",
+          "term": "Reproducibility",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Data quality",
+      "definition": "The degree to which data is relevant, accurate, complete, consistent, reliable, valid, and usable for its intended purpose.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Parts include",
+          "term": "Completeness",
+          "sort_order": 1
+        },
+        {
+          "label": "Parts include",
+          "term": "Consistency",
+          "sort_order": 1
+        },
+        {
+          "label": "Supported by",
+          "term": "Quality assurance",
+          "sort_order": 2
+        },
+        {
+          "label": "Supports",
+          "term": "Data reuse",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Data reuse",
+      "definition": "Using existing data, originally collected for another purpose, to answer new research questions or conduct additional analyses. Data may be reused by the original researchers or by others who were not involved in its collection.",
+      "stages": [
+        "Problem Definition & Planning",
+        "Data Preparation",
+        "Results & Reporting"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_1",
+        "id_2",
+        "id_7"
+      ],
+      "relationships": [
+        {
+          "label": "Supported by",
+          "term": "Data quality",
+          "sort_order": 2
+        },
+        {
+          "label": "Supported by",
+          "term": "FAIR principles",
+          "sort_order": 2
+        },
+        {
+          "label": "Supported by",
+          "term": "Metadata",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Data transformation",
+      "definition": "Changing the structure, representation, scale, or content of data so that it can be analyzed or processed more effectively.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Part of",
+          "term": "Data preparation",
+          "sort_order": 1
+        },
+        {
+          "label": "Types include",
+          "term": "Data aggregation",
+          "sort_order": 1
+        },
+        {
+          "label": "Types include",
+          "term": "Data masking",
+          "sort_order": 1
+        },
+        {
+          "label": "Types include",
+          "term": "Normalization",
+          "sort_order": 1
+        },
+        {
+          "label": "Types include",
+          "term": "Tracked transformation",
+          "sort_order": 1
+        },
+        {
+          "label": "Related",
+          "term": "Data cleaning",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "Data type",
+      "definition": "The structural or semantic form of data, such as numerical, categorical, time-series, text, image, audio, video, or mixed data.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Types include",
+          "term": "Categorical data",
+          "sort_order": 1
+        },
+        {
+          "label": "Types include",
+          "term": "Mixed data",
+          "sort_order": 1
+        },
+        {
+          "label": "Types include",
+          "term": "Multimodal data",
+          "sort_order": 1
+        },
+        {
+          "label": "Types include",
+          "term": "Numerical data",
+          "sort_order": 1
+        },
+        {
+          "label": "Types include",
+          "term": "Time-series data",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Data validation",
+      "definition": "Checking whether data conforms to expected formats, ranges, rules, schemas, or scientific constraints.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Part of",
+          "term": "Data preparation",
+          "sort_order": 1
+        },
+        {
+          "label": "Part of",
+          "term": "Quality assurance",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Data version control",
+      "definition": "The practice of tracking and managing changes to [datasets](#dataset) over time so that specific versions can be identified, compared, and restored.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Version control",
+          "sort_order": 1
+        },
+        {
+          "label": "Tools include",
+          "term": "DVC",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Data visualization",
+      "definition": "Representing data graphically through charts, plots, and other visual formats to explore patterns, identify relationships, and communicate findings.",
+      "stages": [
+        "Data Preparation",
+        "Results & Reporting"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_2",
+        "id_7"
+      ],
+      "relationships": [
+        {
+          "label": "Tools include",
+          "term": "Bokeh",
+          "sort_order": 2
+        },
+        {
+          "label": "Tools include",
+          "term": "Matplotlib",
+          "sort_order": 2
+        },
+        {
+          "label": "Tools include",
+          "term": "Plotly",
+          "sort_order": 2
+        },
+        {
+          "label": "Tools include",
+          "term": "seaborn",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Dataset",
+      "definition": "A collection of related data assembled for analysis, machine learning, or other research purposes. A dataset may be divided into subsets for different tasks or stages of model development.",
+      "stages": [
+        "Data Preparation",
+        "Model Selection & Development",
+        "Model Training & Tuning",
+        "Benchmarking, QC & Optimization",
+        "Model Application",
+        "Results & Reporting",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2",
+        "id_3",
+        "id_4",
+        "id_5",
+        "id_6",
+        "id_7",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Parts include",
+          "term": "Test set",
+          "sort_order": 1
+        },
+        {
+          "label": "Parts include",
+          "term": "Training set",
+          "sort_order": 1
+        },
+        {
+          "label": "Parts include",
+          "term": "Validation set",
+          "sort_order": 1
+        },
+        {
+          "label": "Types include",
+          "term": "Benchmark dataset",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Datasheet",
+      "definition": "Structured documentation describing a [dataset](#dataset)’s origin, composition, collection methods, intended uses, limitations, and maintenance. Just as a model card documents an AI model, a datasheet documents the dataset used to train, validate, or test that model. “Datasheets for Datasets” is a well-known framework for producing this documentation.",
+      "stages": [
+        "Results & Reporting",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Results & Reporting",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_7",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Supports",
+          "term": "FAIR principles",
+          "sort_order": 2
+        },
+        {
+          "label": "Compare to",
+          "term": "Model card",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "De-identification",
+      "definition": "Removing or modifying identifying information to reduce the possibility of linking data to an individual.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Technique for",
+          "term": "Data privacy",
+          "sort_order": 2
+        },
+        {
+          "label": "Compare to",
+          "term": "Anonymization",
+          "sort_order": 4
+        },
+        {
+          "label": "Compare to",
+          "term": "Data masking",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "Deployment",
+      "definition": "The process of making a trained AI model available for use in a research workflow or application. Deployment involves preparing the software and computing environment needed to run the model.",
+      "stages": [
+        "Problem Definition & Planning",
+        "Model Selection & Development",
+        "Benchmarking, QC & Optimization",
+        "Model Application",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1",
+        "id_3",
+        "id_5",
+        "id_6",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Related",
+          "term": "Model serving",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "Deployment plan",
+      "definition": "A description of how a completed model or workflow will be made available for use, including the environments, accounts, support channels, and ongoing costs involved. Planning [deployment](#deployment) early distinguishes a one-time prototype from a service others will depend on.",
+      "stages": [
+        "Problem Definition & Planning"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Differential privacy",
+      "definition": "A formal privacy approach that limits how much the presence or absence of an individual record can affect released results.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Technique for",
+          "term": "Data privacy",
+          "sort_order": 2
+        },
+        {
+          "label": "Tools include",
+          "term": "diffprivlib",
+          "sort_order": 2
+        },
+        {
+          "label": "Tools include",
+          "term": "OpenDP",
+          "sort_order": 2
+        },
+        {
+          "label": "Tools include",
+          "term": "PyDP",
+          "sort_order": 2
+        },
+        {
+          "label": "Tools include",
+          "term": "smartnoise-synth",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "diffprivlib",
+      "definition": "An open-source Python library developed by IBM Research that supports implementing differential privacy in data analysis and machine learning. It provides core privacy mechanisms, tools for statistical calculations, tracking privacy budgets, and drop-in differentially private equivalents for [scikit-learn](#scikit-learn) models.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Used for",
+          "term": "Differential privacy",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Dimensionality reduction",
+      "definition": "Reducing the number of [features](#feature) while attempting to retain important information.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Technique for",
+          "term": "Feature engineering",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Disk I/O",
+      "definition": "Input and output operations involving storage devices. Heavy disk I/O can become a [bottleneck](#bottleneck) when reading or writing large [datasets](#dataset).",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Distributed processing",
+      "definition": "Splitting a computation across multiple computers, processes, or nodes so that tasks can run concurrently.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Types include",
+          "term": "Distributed training",
+          "sort_order": 1
+        },
+        {
+          "label": "Tools include",
+          "term": "Apache Spark",
+          "sort_order": 2
+        },
+        {
+          "label": "Tools include",
+          "term": "Hadoop",
+          "sort_order": 2
+        },
+        {
+          "label": "Related",
+          "term": "Parallel processing",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "Distributed training",
+      "definition": "Running a single training job across multiple [GPUs](#gpu) or compute nodes. Data parallelism gives each device a copy of the model and a different portion of the data, while model parallelism splits the model itself across devices.",
+      "stages": [
+        "Model Selection & Development"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Distributed processing",
+          "sort_order": 1
+        },
+        {
+          "label": "Technique for",
+          "term": "Model training",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Dropout",
+      "definition": "A regularization technique that randomly ignores a portion of a model's units during each training step. The proportion ignored, known as the dropout rate, is set as a [hyperparameter](#hyperparameter).",
+      "stages": [
+        "Model Training & Tuning"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_4"
+      ],
+      "relationships": [
+        {
+          "label": "Technique for",
+          "term": "Regularization",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "DUA",
+      "definition": "A data use agreement (DUA) specifies how shared data may be accessed, used, stored, protected, and disclosed. A DUA may limit which collaborators and computing environments are permitted.",
+      "stages": [
+        "Problem Definition & Planning",
+        "Data Preparation",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1",
+        "id_2",
+        "id_8"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Duplicate",
+      "definition": "Two or more records that represent the same observation or entity.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Checked during",
+          "term": "Data cleaning",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "DVC",
+      "definition": "Data Version Control (DVC) is an open-source software tool for tracking [datasets](#dataset), [data transformations](#data-transformation), and machine learning artifacts alongside code.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Used for",
+          "term": "Data version control",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Early stopping",
+      "definition": "Ending a training run once performance on the [validation set](#validation-set) stops improving. Early stopping limits [overfitting](#overfitting) and avoids spending computing time on training that no longer helps.",
+      "stages": [
+        "Model Training & Tuning"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_4"
+      ],
+      "relationships": [
+        {
+          "label": "Technique for",
+          "term": "Regularization",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Edge case",
+      "definition": "An unusual, extreme, or boundary situation that may expose weaknesses in a data-processing or analysis workflow.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Encryption",
+      "definition": "Converting readable data into an encoded form that requires a cryptographic key to restore it. Encryption helps protect sensitive information from unauthorized access or disclosure during storage, transfer, or processing.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Types include",
+          "term": "Encryption at rest",
+          "sort_order": 1
+        },
+        {
+          "label": "Types include",
+          "term": "Encryption in transit",
+          "sort_order": 1
+        },
+        {
+          "label": "Types include",
+          "term": "Encryption in use",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Encryption at rest",
+      "definition": "Protecting stored data through encryption.",
+      "stages": [
+        "Data Preparation",
+        "Model Application"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2",
+        "id_6"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Encryption",
+          "sort_order": 1
+        },
+        {
+          "label": "Compare to",
+          "term": "Encryption in transit",
+          "sort_order": 4
+        },
+        {
+          "label": "Compare to",
+          "term": "Encryption in use",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "Encryption in transit",
+      "definition": "Protecting data while it moves between systems or locations.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Encryption",
+          "sort_order": 1
+        },
+        {
+          "label": "Compare to",
+          "term": "Encryption at rest",
+          "sort_order": 4
+        },
+        {
+          "label": "Compare to",
+          "term": "Encryption in use",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "Encryption in use",
+      "definition": "Protecting data while it is being processed or actively used.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Encryption",
+          "sort_order": 1
+        },
+        {
+          "label": "Compare to",
+          "term": "Encryption at rest",
+          "sort_order": 4
+        },
+        {
+          "label": "Compare to",
+          "term": "Encryption in transit",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "Ensemble model",
+      "definition": "A model that combines the predictions of several models to produce a single result. Ensembles can improve accuracy and provide a measure of uncertainty, but they can also increase the computing and storage resources required.",
+      "stages": [
+        "Model Selection & Development"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_3"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Epoch",
+      "definition": "One complete pass through the training [dataset](#dataset). The number of epochs is a [hyperparameter](#hyperparameter) and contributes directly to how long a training job runs.",
+      "stages": [
+        "Model Training & Tuning"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_4"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Experiment tracking",
+      "definition": "Recording the [hyperparameters](#hyperparameter), code versions, metrics, and outputs associated with each training run. Experiment tracking makes it possible to compare runs and to identify which configuration produced a given result.",
+      "stages": [
+        "Model Selection & Development",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3",
+        "id_8"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Explainability",
+      "definition": "How well people can understand why an AI or machine learning model produced a particular result or decision.",
+      "stages": [
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Cross-Cutting Considerations",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Compare to",
+          "term": "Interpretability",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "Exploratory data analysis",
+      "definition": "Exploratory data analysis (EDA) involves examining and visualizing data to understand distributions, patterns, relationships, anomalies, and potential problems before formal modeling.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Part of",
+          "term": "Data preparation",
+          "sort_order": 1
+        },
+        {
+          "label": "Tools include",
+          "term": "pandas",
+          "sort_order": 2
+        },
+        {
+          "label": "Tools include",
+          "term": "tidyverse",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "FAIR principles",
+      "definition": "Guiding principles for making research outputs, including data and related [metadata](#metadata), Findable, Accessible, Interoperable, and Reusable (FAIR). FAIR is widely referenced in funder requirements and informs planning decisions about documentation, [identifiers](#identifier), [repositories](#repository), and curation.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Supported by",
+          "term": "Datasheet",
+          "sort_order": 2
+        },
+        {
+          "label": "Supported by",
+          "term": "Model card",
+          "sort_order": 2
+        },
+        {
+          "label": "Supports",
+          "term": "Data reuse",
+          "sort_order": 2
+        },
+        {
+          "label": "Compare to",
+          "term": "CARE",
+          "sort_order": 4
+        },
+        {
+          "label": "Compare to",
+          "term": "OCAP®",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "Fairness assessment",
+      "definition": "The evaluation of whether a machine learning or AI model’s outcomes meet fairness criteria appropriate to its intended context. This may involve comparing outcomes or error rates across groups using criteria that reflect relevant stakeholder, social, and technical considerations.",
+      "stages": [
+        "Benchmarking, QC & Optimization",
+        "Results & Reporting"
+      ],
+      "first_stage": "Benchmarking, QC & Optimization",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_5",
+        "id_7"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Model evaluation",
+          "sort_order": 1
+        },
+        {
+          "label": "Related",
+          "term": "Bias",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "Faker",
+      "definition": "A software library for generating realistic-looking but artificial data, often for testing or development.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Used for",
+          "term": "Synthetic data",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Feature",
+      "definition": "An input variable, attribute, or measurable property used by a machine learning model.",
+      "stages": [
+        "Data Preparation",
+        "Model Training & Tuning"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2",
+        "id_4"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Feature encoding",
+      "definition": "Converting data, often [categorical data](#categorical-data), into a numerical representation that a model can use.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Technique for",
+          "term": "Feature engineering",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Feature engineering",
+      "definition": "Creating, selecting, encoding, transforming, or reducing input variables so they are more useful for machine learning and can be used in a model.",
+      "stages": [
+        "Data Preparation",
+        "Benchmarking, QC & Optimization"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2",
+        "id_5"
+      ],
+      "relationships": [
+        {
+          "label": "Part of",
+          "term": "Data preparation",
+          "sort_order": 1
+        },
+        {
+          "label": "Techniques include",
+          "term": "Dimensionality reduction",
+          "sort_order": 2
+        },
+        {
+          "label": "Techniques include",
+          "term": "Feature encoding",
+          "sort_order": 2
+        },
+        {
+          "label": "Techniques include",
+          "term": "Feature scaling",
+          "sort_order": 2
+        },
+        {
+          "label": "Tools include",
+          "term": "scikit-learn",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Feature scaling",
+      "definition": "Adjusting numerical values to a common range or distribution, such as by standardization or min–max scaling.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Technique for",
+          "term": "Feature engineering",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "FERPA",
+      "definition": "The Family Educational Rights and Privacy Act (FERPA) is a U.S. federal law protecting the privacy of student education records at covered educational institutions. FERPA gives parents and eligible students rights over education records and generally requires consent before personally identifiable information from those records is disclosed. Research using those records may be subject to FERPA requirements.",
+      "stages": [
+        "Problem Definition & Planning",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1",
+        "id_8"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Fine-tuning",
+      "definition": "Further training an existing pretrained AI model on additional data to adapt it to a particular task or research domain. Fine-tuning may update all [model parameters](#model-parameters) or only a selected subset, typically requiring fewer resources than training a model from scratch.",
+      "stages": [
+        "Model Selection & Development",
+        "Model Training & Tuning",
+        "Benchmarking, QC & Optimization",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3",
+        "id_4",
+        "id_5",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Model training",
+          "sort_order": 1
+        },
+        {
+          "label": "Techniques include",
+          "term": "LoRA",
+          "sort_order": 2
+        },
+        {
+          "label": "Techniques include",
+          "term": "PEFT",
+          "sort_order": 2
+        },
+        {
+          "label": "Compare to",
+          "term": "Pre-training",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "Formatting issue",
+      "definition": "An inconsistency in how data is represented, such as different date formats, inconsistent capitalization, or incompatible units.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Checked during",
+          "term": "Data cleaning",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Foundation model",
+      "definition": "A large AI model trained on broad, general-purpose data that can be adapted to many different downstream tasks. Foundation models are usually reused and adapted rather than built from scratch, because training one requires very large [datasets](#dataset) and substantial computing time.",
+      "stages": [
+        "Model Selection & Development",
+        "Benchmarking, QC & Optimization",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3",
+        "id_5",
+        "id_8"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Generalization",
+      "definition": "How well a model performs on data it has not seen before. Improving generalization is the purpose of tuning decisions such as regularization, [dropout](#dropout), and [early stopping](#early-stopping).",
+      "stages": [
+        "Model Training & Tuning",
+        "Benchmarking, QC & Optimization"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_4",
+        "id_5"
+      ],
+      "relationships": [
+        {
+          "label": "Supported by",
+          "term": "Regularization",
+          "sort_order": 2
+        },
+        {
+          "label": "Related",
+          "term": "Overfitting",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "Git",
+      "definition": "A distributed version-control system commonly used to track changes to code, documentation, and configuration files.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Used for",
+          "term": "Version control",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Go/No-Go decision point",
+      "definition": "A point scheduled in a project plan at which the team decides whether to continue, change direction, or stop, based on agreed evidence. Defining these points in advance limits the resources spent on approaches that are not working.",
+      "stages": [
+        "Problem Definition & Planning"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_1"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "GPU",
+      "definition": "A graphics processing unit (GPU) is a processor capable of performing many operations in parallel and is often used for machine learning workloads.",
+      "stages": [
+        "Problem Definition & Planning",
+        "Data Preparation",
+        "Model Selection & Development",
+        "Model Training & Tuning",
+        "Benchmarking, QC & Optimization",
+        "Model Application",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1",
+        "id_2",
+        "id_3",
+        "id_4",
+        "id_5",
+        "id_6",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Accelerator",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Gradient accumulation",
+      "definition": "A training technique that combines information about how to adjust a model from several smaller batches before updating its parameters. This makes it possible to train with an effectively larger batch size than the available [GPU](#gpu) memory would otherwise allow.",
+      "stages": [
+        "Model Selection & Development"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3"
+      ],
+      "relationships": [
+        {
+          "label": "Related",
+          "term": "Batch size",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "Grid search",
+      "definition": "A [hyperparameter](#hyperparameter) search that evaluates every combination of a predefined set of values. Grid search is thorough but becomes computationally expensive as the number of hyperparameters grows.",
+      "stages": [
+        "Model Training & Tuning"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_4"
+      ],
+      "relationships": [
+        {
+          "label": "Technique for",
+          "term": "HPO",
+          "sort_order": 2
+        },
+        {
+          "label": "Alternative method / Alternative methods",
+          "term": "Bayesian optimization",
+          "sort_order": 3
+        },
+        {
+          "label": "Alternative method / Alternative methods",
+          "term": "Random search",
+          "sort_order": 3
+        }
+      ]
+    },
+    {
+      "term": "Hadoop",
+      "definition": "A collection of technologies for distributed storage and processing of large [datasets](#dataset).",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Used for",
+          "term": "Distributed processing",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "HIPAA",
+      "definition": "The Health Insurance Portability and Accountability Act (HIPAA) is a U.S. federal law that protects certain health information that can identify a person. Organizations subject to HIPAA must safeguard that information, which can restrict where and how it is stored, accessed, and processed.",
+      "stages": [
+        "Problem Definition & Planning",
+        "Model Application",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1",
+        "id_6",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Related",
+          "term": "PHI",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "HPC",
+      "definition": "High-performance computing (HPC) refers to computing infrastructure designed to process large or complex workloads using powerful systems, parallelism, and specialized resources.",
+      "stages": [
+        "Data Preparation",
+        "Model Selection & Development",
+        "Model Training & Tuning",
+        "Model Application",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2",
+        "id_3",
+        "id_4",
+        "id_6",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Tools include",
+          "term": "Slurm",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "HPO",
+      "definition": "[Hyperparameter](#hyperparameter) optimization (HPO) is the process of systematically searching for hyperparameter values that produce the best model performance. HPO usually requires many training runs and is often submitted as a set of concurrent or queued jobs.",
+      "stages": [
+        "Model Training & Tuning"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_4"
+      ],
+      "relationships": [
+        {
+          "label": "Supports",
+          "term": "Model performance",
+          "sort_order": 2
+        },
+        {
+          "label": "Techniques include",
+          "term": "Bayesian optimization",
+          "sort_order": 2
+        },
+        {
+          "label": "Techniques include",
+          "term": "Grid search",
+          "sort_order": 2
+        },
+        {
+          "label": "Techniques include",
+          "term": "Population-based training",
+          "sort_order": 2
+        },
+        {
+          "label": "Techniques include",
+          "term": "Random search",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Hybrid infrastructure",
+      "definition": "An arrangement in which a project uses a combination of local, campus, and cloud computing resources rather than a single environment. Hybrid approaches can address capacity or compliance limits but add complexity in data movement and cost tracking.",
+      "stages": [
+        "Problem Definition & Planning"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Hyperparameter",
+      "definition": "A setting that controls how a model is trained but is not learned from the data, such as the learning rate, batch size, or number of [epochs](#epoch). Hyperparameter values are chosen before or between training runs and strongly affect the outcome.",
+      "stages": [
+        "Model Training & Tuning",
+        "Benchmarking, QC & Optimization"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_4",
+        "id_5"
+      ],
+      "relationships": [
+        {
+          "label": "Types include",
+          "term": "Batch size",
+          "sort_order": 1
+        },
+        {
+          "label": "Types include",
+          "term": "Learning rate",
+          "sort_order": 1
+        },
+        {
+          "label": "Compare to",
+          "term": "Model parameters",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "IDE",
+      "definition": "An integrated development environment (IDE) combines tools for writing, running, debugging, and managing code.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Identifier",
+      "definition": "A field or value that identifies a person, organization, record, or other entity.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Indexing",
+      "definition": "Creating an efficient lookup structure or [identifier](#identifier) to improve data access, searches, or queries.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Indigenous data governance",
+      "definition": "The principle and practice that Indigenous peoples hold authority over data about their communities, territories, and knowledge, including how it is collected, used, and shared. It is articulated through frameworks such as the CARE Principles and OCAP, and may apply even where no regulation requires it.",
+      "stages": [
+        "Problem Definition & Planning"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1"
+      ],
+      "relationships": [
+        {
+          "label": "Supported by",
+          "term": "CARE",
+          "sort_order": 2
+        },
+        {
+          "label": "Supported by",
+          "term": "OCAP®",
+          "sort_order": 2
+        },
+        {
+          "label": "Compare to",
+          "term": "Indigenous data sovereignty",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "Indigenous data sovereignty",
+      "definition": "The principle that Indigenous peoples and nations have authority over the collection, ownership, governance, use, and sharing of data about their communities, lands, and resources.",
+      "stages": [
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Cross-Cutting Considerations",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Compare to",
+          "term": "Indigenous data governance",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "Inference",
+      "definition": "The process of using a trained AI model to generate predictions or results from new data. Unlike training, inference uses what the model has already learned without updating its parameters.",
+      "stages": [
+        "Model Selection & Development",
+        "Benchmarking, QC & Optimization",
+        "Model Application",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3",
+        "id_5",
+        "id_6",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Types include",
+          "term": "Real-time inference",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Interoperability",
+      "definition": "The ability of different systems, tools, or platforms to exchange and use data or functionality across environments. This capability often depends on shared standards, formats, or protocols.",
+      "stages": [
+        "Results & Reporting"
+      ],
+      "first_stage": "Results & Reporting",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_7"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Interpretability",
+      "definition": "How well people can understand an AI or machine learning model's overall behavior and how it produces results.",
+      "stages": [
+        "Results & Reporting",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Results & Reporting",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_7",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Compare to",
+          "term": "Explainability",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "IRB",
+      "definition": "An institutional review board (IRB) is a committee that reviews and oversees research involving human subjects to confirm that it meets ethical and regulatory requirements. IRB review and the conditions it sets can determine where data may be stored and processed.",
+      "stages": [
+        "Problem Definition & Planning",
+        "Model Application"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1",
+        "id_6"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Job scheduler",
+      "definition": "The software that queues submitted computing jobs and allocates shared cluster resources among users according to policy. Scheduler behavior, including queue limits and typical wait times, affects what project timelines are realistic.",
+      "stages": [
+        "Problem Definition & Planning"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_1"
+      ],
+      "relationships": [
+        {
+          "label": "Types include",
+          "term": "Slurm",
+          "sort_order": 1
+        },
+        {
+          "label": "Used for",
+          "term": "Batch processing",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Jupyter notebook",
+      "definition": "An interactive document that combines executable code, outputs, visualizations, and explanatory text.",
+      "stages": [
+        "Data Preparation",
+        "Model Training & Tuning",
+        "Model Application"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2",
+        "id_4",
+        "id_6"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Label Studio",
+      "definition": "A tool for creating and managing labeled [datasets](#dataset) for machine-learning projects.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Used for",
+          "term": "Annotation",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Labeling scheme",
+      "definition": "A defined system for assigning labels or categories to observations, often for supervised machine learning.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Learning rate",
+      "definition": "The hyperparameter that controls how much a model's parameters change in response to each update during training. A learning rate that is too high can keep the model from settling on a good solution, while one that is too low makes training unnecessarily slow.",
+      "stages": [
+        "Model Training & Tuning"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_4"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Hyperparameter",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Lifecycle governance",
+      "definition": "The set of policies, processes, roles, and controls used to manage a system, [dataset](#dataset), or other asset from creation to retirement. The goal is to ensure that the asset remains secure, compliant, effective, and aligned with organizational objectives at every stage of its existence.",
+      "stages": [
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Cross-Cutting Considerations",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_8"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "LLM",
+      "definition": "A large language model (LLM) is trained on large collections of text to interpret and generate natural language. LLMs are applied to tasks such as summarization, classification, information extraction, and conversational applications.",
+      "stages": [
+        "Model Selection & Development",
+        "Model Training & Tuning",
+        "Benchmarking, QC & Optimization",
+        "Model Application",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3",
+        "id_4",
+        "id_5",
+        "id_6",
+        "id_8"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "LoRA",
+      "definition": "Low-rank adaptation (LoRA) is a parameter-efficient fine-tuning method that inserts small trainable components into a model while leaving the original [model weights](#model-weights) unchanged. LoRA reduces memory and computing requirements compared with full fine-tuning, potentially allowing researchers to use fewer [GPUs](#gpu).",
+      "stages": [
+        "Model Selection & Development",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "PEFT",
+          "sort_order": 1
+        },
+        {
+          "label": "Technique for",
+          "term": "Fine-tuning",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Loss function",
+      "definition": "A measure of how far a model's outputs are from the expected values, used to guide parameter updates during training. Loss values recorded across a training run are often plotted as a loss curve to show whether the model is improving.",
+      "stages": [
+        "Model Training & Tuning"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_4"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Maintainability",
+      "definition": "How readily a project's code, environments, and workflows can be understood, updated, and repaired by people other than their original authors. Maintainable projects depend on documentation, managed dependencies, and consistent computing environments.",
+      "stages": [
+        "Problem Definition & Planning",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1",
+        "id_8"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Matplotlib",
+      "definition": "A Python library for creating static and interactive visualizations to examine [data distributions](#data-distribution), patterns, and relationships.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Used for",
+          "term": "Data visualization",
+          "sort_order": 2
+        },
+        {
+          "label": "Compare to",
+          "term": "seaborn",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "Metadata",
+      "definition": "Information that describes data, such as its origin, format, contents, collection conditions, ownership, or processing history.",
+      "stages": [
+        "Data Preparation",
+        "Model Application",
+        "Results & Reporting",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2",
+        "id_6",
+        "id_7",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Produced by",
+          "term": "Annotation",
+          "sort_order": 2
+        },
+        {
+          "label": "Supports",
+          "term": "Data reuse",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Missing value",
+      "definition": "A data field for which no value was recorded, collected, or retained.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Checked during",
+          "term": "Data cleaning",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Mixed data",
+      "definition": "A [dataset](#dataset) containing multiple data types, such as numerical, categorical, text, image, or time-series information.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Data type",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Mixed precision training",
+      "definition": "Training that represents some values at lower numerical precision in order to reduce memory use and speed up computation. Mixed-precision training can allow larger models or [batch sizes](#batch-size) to fit on the same hardware.",
+      "stages": [
+        "Model Training & Tuning"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_4"
+      ],
+      "relationships": [
+        {
+          "label": "Technique for",
+          "term": "Model training",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Model architecture",
+      "definition": "The structural design of a model, including the types of layers it uses and how they are connected. Architecture choices affect what kinds of data a model can handle, as well as the memory and computing resources it requires.",
+      "stages": [
+        "Model Selection & Development"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3"
+      ],
+      "relationships": [
+        {
+          "label": "Types include",
+          "term": "Transformer",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Model card",
+      "definition": "A document describing a trained AI model’s intended uses, training and evaluation data, performance, capabilities, risks, and known limitations. It helps readers judge when and how the model is appropriate to use.",
+      "stages": [
+        "Model Selection & Development",
+        "Benchmarking, QC & Optimization",
+        "Results & Reporting",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3",
+        "id_5",
+        "id_7",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Supports",
+          "term": "FAIR principles",
+          "sort_order": 2
+        },
+        {
+          "label": "Compare to",
+          "term": "Datasheet",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "Model evaluation",
+      "definition": "The process of assessing model performance and behavior using data, metrics, and analyses suited to its intended use. Evaluation can include benchmarks and checks for bias or fairness when comparing models.",
+      "stages": [
+        "Model Selection & Development",
+        "Results & Reporting"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3",
+        "id_7"
+      ],
+      "relationships": [
+        {
+          "label": "Types include",
+          "term": "Benchmarking",
+          "sort_order": 1
+        },
+        {
+          "label": "Types include",
+          "term": "Fairness assessment",
+          "sort_order": 1
+        },
+        {
+          "label": "Checks for",
+          "term": "Bias",
+          "sort_order": 2
+        },
+        {
+          "label": "Visualizations include",
+          "term": "Calibration plot",
+          "sort_order": 2
+        },
+        {
+          "label": "Visualizations include",
+          "term": "Precision–recall curve",
+          "sort_order": 2
+        },
+        {
+          "label": "Related",
+          "term": "Model performance",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "Model license",
+      "definition": "The terms that govern how a model and its weights may be used, modified, and redistributed. License terms should be reviewed before a model is selected, because some restrict commercial use, redistribution, or use with particular types of data.",
+      "stages": [
+        "Model Selection & Development"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_3"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Model parameters",
+      "definition": "The numerical values inside a model that are adjusted during training and that determine how the model produces its outputs. Parameter count is often used as a rough indicator of a model's size and of the resources needed to train or run it.",
+      "stages": [
+        "Model Training & Tuning"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_4"
+      ],
+      "relationships": [
+        {
+          "label": "Types include",
+          "term": "Model weights",
+          "sort_order": 1
+        },
+        {
+          "label": "Compare to",
+          "term": "Hyperparameter",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "Model performance",
+      "definition": "The degree to which a model performs as intended, assessed using metrics appropriate to the model type, intended use, and evaluation context.",
+      "stages": [
+        "Model Selection & Development",
+        "Benchmarking, QC & Optimization",
+        "Model Application",
+        "Results & Reporting"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3",
+        "id_5",
+        "id_6",
+        "id_7"
+      ],
+      "relationships": [
+        {
+          "label": "Supported by",
+          "term": "HPO",
+          "sort_order": 2
+        },
+        {
+          "label": "Related",
+          "term": "Model evaluation",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "Model repository",
+      "definition": "A managed service for publishing, discovering, and downloading trained models together with their weights and documentation. Model repositories typically record version, license, and evaluation information for each model.",
+      "stages": [
+        "Model Training & Tuning"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_4"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Repository",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Model serving",
+      "definition": "Making a trained AI model available for [inference](#inference). Users or applications send inputs to the model and receive predictions or results, often through an API.",
+      "stages": [
+        "Model Selection & Development",
+        "Model Application"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3",
+        "id_6"
+      ],
+      "relationships": [
+        {
+          "label": "Related",
+          "term": "Deployment",
+          "sort_order": 5
+        },
+        {
+          "label": "Related",
+          "term": "Real-time inference",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "Model training",
+      "definition": "The process of adjusting a model's parameters using data so that it learns patterns and can perform tasks. Model training can take different forms, including pre-training on broad [datasets](#dataset) and fine-tuning an existing model for a specific task or research domain.",
+      "stages": [
+        "Model Selection & Development",
+        "Model Training & Tuning",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3",
+        "id_4",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Types include",
+          "term": "Fine-tuning",
+          "sort_order": 1
+        },
+        {
+          "label": "Types include",
+          "term": "Pre-training",
+          "sort_order": 1
+        },
+        {
+          "label": "Produces",
+          "term": "Model weights",
+          "sort_order": 2
+        },
+        {
+          "label": "Techniques include",
+          "term": "Distributed training",
+          "sort_order": 2
+        },
+        {
+          "label": "Techniques include",
+          "term": "Mixed precision training",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Model weights",
+      "definition": "Numerical values learned during training that help determine how a model processes inputs and produces outputs. Weights may be saved and loaded for reuse or adaptation; pretrained weights may also be obtained from a [model repository](#model-repository).",
+      "stages": [
+        "Model Selection & Development"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_3"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Model parameters",
+          "sort_order": 1
+        },
+        {
+          "label": "Produced by",
+          "term": "Model training",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Multicollinearity",
+      "definition": "A situation in which two or more [features](#feature) are strongly related to one another, potentially complicating model interpretation or estimation.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Multimodal data",
+      "definition": "Data that combines multiple modalities, such as text, images, audio, video, sensor readings, or tabular measurements.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Data type",
+          "sort_order": 1
+        },
+        {
+          "label": "Related",
+          "term": "Multimodal model",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "Multimodal model",
+      "definition": "A model that accepts or produces more than one type of data, such as text together with images or audio. Multimodal models support research tasks that combine different kinds of evidence, such as pairing imaging data with written descriptions.",
+      "stages": [
+        "Model Selection & Development"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3"
+      ],
+      "relationships": [
+        {
+          "label": "Related",
+          "term": "Multimodal data",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "NIST AI Risk Management Framework",
+      "definition": "A voluntary framework published by the U.S. National Institute of Standards and Technology for identifying, assessing, and managing risks associated with AI systems. It is often used as a reference point when an institution has no AI policy of its own.",
+      "stages": [
+        "Problem Definition & Planning",
+        "Benchmarking, QC & Optimization",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1",
+        "id_5",
+        "id_8"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "NLP",
+      "definition": "Natural language processing (NLP) refers to methods for analyzing and processing human language in text or speech data.",
+      "stages": [
+        "Data Preparation",
+        "Model Selection & Development",
+        "Model Application"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2",
+        "id_3",
+        "id_6"
+      ],
+      "relationships": [
+        {
+          "label": "Techniques include",
+          "term": "Text tokenization",
+          "sort_order": 2
+        },
+        {
+          "label": "Tools include",
+          "term": "spaCy",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Normalization",
+      "definition": "Rescaling or restructuring data to make values more comparable or to meet the assumptions of a particular method.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Data transformation",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Numerical data",
+      "definition": "Data represented as numbers, such as measurements, counts, or continuous values.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Data type",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Object store",
+      "definition": "A storage system that manages data as objects, typically containing data, [metadata](#metadata), and a unique [identifier](#identifier) rather than a traditional hierarchical file path.",
+      "stages": [
+        "Data Preparation",
+        "Model Selection & Development",
+        "Model Training & Tuning",
+        "Model Application"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2",
+        "id_3",
+        "id_4",
+        "id_6"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Objective & key results",
+      "definition": "A goal-setting method that pairs a stated objective with a small number of measurable results used to track progress toward it. OKRs are sometimes used to connect an AI project's technical milestones to broader research or institutional goals.",
+      "stages": [
+        "Problem Definition & Planning"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "OCAP®",
+      "definition": "The principles of Ownership, Control, Access, and Possession (OCAP®) assert that First Nations in Canada own and control their data. Developed by a National Steering Committee established by the Assembly of First Nations, the principles are now stewarded by the First Nations Information Governance Centre.",
+      "stages": [
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Cross-Cutting Considerations",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Supports",
+          "term": "Indigenous data governance",
+          "sort_order": 2
+        },
+        {
+          "label": "Compare to",
+          "term": "CARE",
+          "sort_order": 4
+        },
+        {
+          "label": "Compare to",
+          "term": "FAIR principles",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "Open-weight model",
+      "definition": "A model whose trained weights are published so that others can download, inspect, and adapt them. Open-weight models allow researchers to work on local or institutional infrastructure, although the accompanying license may still restrict certain uses.",
+      "stages": [
+        "Model Selection & Development"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_3"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "OpenDP",
+      "definition": "A software library available for R and Python that supports implementing differential privacy in statistical analyses. It provides tools for controlling how much information about individuals can be revealed in released results.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Used for",
+          "term": "Differential privacy",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "OpenRefine",
+      "definition": "An interactive tool for cleaning, transforming, and reconciling messy tabular data.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Used for",
+          "term": "Data cleaning",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Outlier",
+      "definition": "An observation that differs substantially from the other observations in a [dataset](#dataset). Outliers may represent errors, rare events, or meaningful phenomena.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Checked during",
+          "term": "Data cleaning",
+          "sort_order": 2
+        },
+        {
+          "label": "Checked during",
+          "term": "Quality assurance",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Overfitting",
+      "definition": "When a model learns its training data too closely, including patterns that do not generalize to new data. Techniques such as regularization, [dropout](#dropout), and [early stopping](#early-stopping) can help reduce overfitting.",
+      "stages": [
+        "Model Training & Tuning",
+        "Benchmarking, QC & Optimization"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_4",
+        "id_5"
+      ],
+      "relationships": [
+        {
+          "label": "Compare to",
+          "term": "Underfitting",
+          "sort_order": 4
+        },
+        {
+          "label": "Related",
+          "term": "Generalization",
+          "sort_order": 5
+        },
+        {
+          "label": "Related",
+          "term": "Regularization",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "pandas",
+      "definition": "A Python library for manipulating and analyzing tabular and [time-series data](#time-series-data).",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Used for",
+          "term": "Exploratory data analysis",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Parallel processing",
+      "definition": "Executing multiple computational tasks at the same time, often using multiple [CPU](#cpu) cores or [GPUs](#gpu).",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Related",
+          "term": "Distributed processing",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "PEFT",
+      "definition": "Parameter-efficient fine-tuning (PEFT) refers to methods that adapt a pretrained model by training a small number of additional or selected parameters rather than all of them. PEFT substantially lowers the memory and computing resources needed to adapt large models.",
+      "stages": [
+        "Model Selection & Development",
+        "Benchmarking, QC & Optimization",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3",
+        "id_5",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Types include",
+          "term": "LoRA",
+          "sort_order": 1
+        },
+        {
+          "label": "Technique for",
+          "term": "Fine-tuning",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Performance profiling",
+      "definition": "The process of measuring how a program uses computing resources, such as [CPUs](#cpu), [GPUs](#gpu), memory, and storage. Performance profiling helps identify bottlenecks that slow down a model or computational workflow.",
+      "stages": [
+        "Benchmarking, QC & Optimization"
+      ],
+      "first_stage": "Benchmarking, QC & Optimization",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_5"
+      ],
+      "relationships": [
+        {
+          "label": "Checks for",
+          "term": "Bottleneck",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "PHI",
+      "definition": "Protected health information (PHI) is individually identifiable health information covered by HIPAA, including clinical, payment, and demographic data linked to a person's [care](#care). PHI generally must be handled only in environments approved for it.",
+      "stages": [
+        "Problem Definition & Planning",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "PII",
+          "sort_order": 1
+        },
+        {
+          "label": "Related",
+          "term": "HIPAA",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "PI",
+      "definition": "A principal investigator (PI) is the researcher with primary responsibility for a project's scientific direction, funding, and compliance obligations. The PI is usually the person who must approve commitments of budget, data, and personnel.",
+      "stages": [
+        "Problem Definition & Planning"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_1"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "PII",
+      "definition": "Personally identifiable information (PII) is information that can identify a person directly or in combination with other data. PII may require additional controls on access, storage, sharing, and auditing.",
+      "stages": [
+        "Problem Definition & Planning",
+        "Data Preparation",
+        "Model Training & Tuning",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1",
+        "id_2",
+        "id_4",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Types include",
+          "term": "PHI",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Pipeline monitoring",
+      "definition": "Observing a data pipeline’s performance, resource use, errors, data volumes, and processing delays.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Related",
+          "term": "Data pipeline",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "Plotly",
+      "definition": "A visualization library available for both R and Python that creates interactive charts. Researchers can explore data through [features](#feature) such as zooming, filtering, and hovering over individual observations.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Used for",
+          "term": "Data visualization",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Population-based training",
+      "definition": "A tuning approach that trains several models at the same time and periodically copies and adjusts the settings of the better-performing ones. It combines [hyperparameter](#hyperparameter) search with ongoing training instead of treating them as separate steps.",
+      "stages": [
+        "Model Training & Tuning"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_4"
+      ],
+      "relationships": [
+        {
+          "label": "Technique for",
+          "term": "HPO",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "POSIX filesystem",
+      "definition": "A filesystem that follows common Unix/POSIX conventions for files, directories, permissions, and access.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Pre-training",
+      "definition": "The initial training of a model on a large, general [dataset](#dataset) before it is adapted to a specific task. Pre-training can require substantial computing resources, which is why researchers often reuse an existing pre-trained model instead.",
+      "stages": [
+        "Model Selection & Development",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Model training",
+          "sort_order": 1
+        },
+        {
+          "label": "Compare to",
+          "term": "Fine-tuning",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "Precision–recall curve",
+      "definition": "A plot used to evaluate a classification model by showing the tradeoff between precision and recall. Precision measures how often positive predictions are correct, while recall measures how many of the actual positive cases the model successfully identifies.",
+      "stages": [
+        "Results & Reporting"
+      ],
+      "first_stage": "Results & Reporting",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_7"
+      ],
+      "relationships": [
+        {
+          "label": "Used for",
+          "term": "Model evaluation",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Problem statement",
+      "definition": "A concise description of the research problem an AI project is meant to address, including what is unknown and why it matters. The problem statement is what later decisions about data, methods, and computing resources are checked against.",
+      "stages": [
+        "Problem Definition & Planning"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Project sustainability",
+      "definition": "The capacity of a project's data, code, models, and services to remain usable and supported after the initial funding or effort ends. Sustainability planning addresses who will maintain the work, on what infrastructure, and with what resources.",
+      "stages": [
+        "Problem Definition & Planning"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "PyDP",
+      "definition": "A Python library that supports implementing differential privacy in statistical calculations, including counts, sums, and averages. It is built on Google's differential privacy software.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Used for",
+          "term": "Differential privacy",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Quality assurance",
+      "definition": "Quality assurance (QA) involves activities used to check and improve data quality, including testing for completeness, consistency, bias, errors, and outliers.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Parts include",
+          "term": "Data validation",
+          "sort_order": 1
+        },
+        {
+          "label": "Checks for",
+          "term": "Bias",
+          "sort_order": 2
+        },
+        {
+          "label": "Checks for",
+          "term": "Completeness",
+          "sort_order": 2
+        },
+        {
+          "label": "Checks for",
+          "term": "Consistency",
+          "sort_order": 2
+        },
+        {
+          "label": "Checks for",
+          "term": "Outlier",
+          "sort_order": 2
+        },
+        {
+          "label": "Supports",
+          "term": "Data quality",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Quantization",
+      "definition": "Reducing the numerical precision used to represent and process a model’s values. Quantization can lower memory use and allow models to run on less powerful hardware, sometimes at the cost of accuracy.",
+      "stages": [
+        "Model Selection & Development",
+        "Benchmarking, QC & Optimization"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3",
+        "id_5"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "RACI chart",
+      "definition": "A planning table recording who is Responsible, Accountable, Consulted, and Informed for each task in a project. RACI charts help prevent gaps and duplicated effort in work that spans multiple teams or institutions.",
+      "stages": [
+        "Problem Definition & Planning"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "RAM",
+      "definition": "Random-access memory (RAM) holds data and programs while they are actively being processed.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Random search",
+      "definition": "A [hyperparameter](#hyperparameter) search that samples combinations of values at random rather than testing all of them. Random search often identifies good settings using fewer training runs than grid search.",
+      "stages": [
+        "Model Training & Tuning"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_4"
+      ],
+      "relationships": [
+        {
+          "label": "Technique for",
+          "term": "HPO",
+          "sort_order": 2
+        },
+        {
+          "label": "Alternative method / Alternative methods",
+          "term": "Bayesian optimization",
+          "sort_order": 3
+        },
+        {
+          "label": "Alternative method / Alternative methods",
+          "term": "Grid search",
+          "sort_order": 3
+        }
+      ]
+    },
+    {
+      "term": "Raw data",
+      "definition": "Data in its original or minimally processed form, before cleaning, transformation, labeling, or restructuring.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "RCD facilitator",
+      "definition": "A Research Computing and Data (RCD) facilitator works with researchers to turn research goals into workable technical plans and to connect them with appropriate resources, expertise, and institutional processes. Facilitators work at the interface between research needs and infrastructure rather than operating systems alone.",
+      "stages": [
+        "Problem Definition & Planning",
+        "Data Preparation",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1",
+        "id_2",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Related",
+          "term": "Research Computing and Data",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "Real-time inference",
+      "definition": "Using a trained AI model to produce results within an application's response-time requirements. Real-time inference is important for applications such as robotics, automated monitoring, and interactive AI systems.",
+      "stages": [
+        "Model Application"
+      ],
+      "first_stage": "Model Application",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_6"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Inference",
+          "sort_order": 1
+        },
+        {
+          "label": "Related",
+          "term": "Model serving",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "Regularization",
+      "definition": "Techniques that constrain a model during training to discourage it from fitting noise in the training data. Common approaches include penalties on parameter size, such as weight decay, along with dropout and early stopping.",
+      "stages": [
+        "Model Training & Tuning"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_4"
+      ],
+      "relationships": [
+        {
+          "label": "Supports",
+          "term": "Generalization",
+          "sort_order": 2
+        },
+        {
+          "label": "Techniques include",
+          "term": "Dropout",
+          "sort_order": 2
+        },
+        {
+          "label": "Techniques include",
+          "term": "Early stopping",
+          "sort_order": 2
+        },
+        {
+          "label": "Related",
+          "term": "Overfitting",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "Repository",
+      "definition": "A managed system or service for storing, preserving, and providing access to research outputs such as data, code, images, publications, or models. Repositories may provide [metadata](#metadata), persistent [identifiers](#identifier), [access controls](#access-control), and other services that support discovery, reuse, and long-term preservation.",
+      "stages": [
+        "Model Selection & Development",
+        "Benchmarking, QC & Optimization",
+        "Results & Reporting"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3",
+        "id_5",
+        "id_7"
+      ],
+      "relationships": [
+        {
+          "label": "Types include",
+          "term": "Model repository",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Reproducibility",
+      "definition": "The ability to recreate computational research results by repeating a documented workflow with the same data or inputs. This depends on recording code, parameters, software environments, dependencies, and processing steps, and may yield the same or substantially similar results. Early planning for documentation, computing environments, and version control helps support reproducibility.",
+      "stages": [
+        "Problem Definition & Planning",
+        "Data Preparation",
+        "Model Training & Tuning",
+        "Benchmarking, QC & Optimization",
+        "Model Application",
+        "Results & Reporting",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1",
+        "id_2",
+        "id_4",
+        "id_5",
+        "id_6",
+        "id_7",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Supported by",
+          "term": "Data provenance",
+          "sort_order": 2
+        },
+        {
+          "label": "Supported by",
+          "term": "Version control",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Research Computing and Data",
+      "definition": "Research Computing and Data (RCD) encompasses the staff, infrastructure, and services that support computational and data-intensive research at an institution. RCD groups provide computing systems, storage, software support, training, and consultation.",
+      "stages": [
+        "Problem Definition & Planning"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1"
+      ],
+      "relationships": [
+        {
+          "label": "Related",
+          "term": "RCD facilitator",
+          "sort_order": 5
+        }
+      ]
+    },
+    {
+      "term": "Robustness",
+      "definition": "The ability of an AI model to maintain reliable performance when given noisy, unexpected, or slightly altered inputs. Robust models are less likely to produce incorrect results when input data varies.",
+      "stages": [
+        "Benchmarking, QC & Optimization"
+      ],
+      "first_stage": "Benchmarking, QC & Optimization",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_5"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Scalability",
+      "definition": "The ability of a computing system or workflow to handle growing workloads while maintaining acceptable performance. Scaling up a prototype may require additional [CPUs](#cpu), [GPUs](#gpu), memory, or computing nodes.",
+      "stages": [
+        "Problem Definition & Planning",
+        "Data Preparation",
+        "Model Training & Tuning",
+        "Benchmarking, QC & Optimization",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1",
+        "id_2",
+        "id_4",
+        "id_5",
+        "id_8"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "scikit-learn",
+      "definition": "A Python library providing tools for data preprocessing, feature engineering, modeling, and evaluation.",
+      "stages": [
+        "Data Preparation",
+        "Model Training & Tuning",
+        "Benchmarking, QC & Optimization",
+        "Results & Reporting"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2",
+        "id_4",
+        "id_5",
+        "id_7"
+      ],
+      "relationships": [
+        {
+          "label": "Used for",
+          "term": "Feature engineering",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "seaborn",
+      "definition": "A Python library built on Matplotlib that simplifies statistical visualizations, including comparisons between variables, distributions, and [correlations](#correlation).",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Used for",
+          "term": "Data visualization",
+          "sort_order": 2
+        },
+        {
+          "label": "Compare to",
+          "term": "Matplotlib",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "Secure enclave",
+      "definition": "A computing environment configured and documented specifically for restricted or sensitive data, with access control, monitoring, and limited data movement. Enclaves allow projects to work with regulated data on institutional infrastructure rather than general-purpose systems.",
+      "stages": [
+        "Problem Definition & Planning"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1"
+      ],
+      "relationships": [
+        {
+          "label": "Parts include",
+          "term": "Access control",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Shared filesystem",
+      "definition": "A storage system that allows multiple users, computers, or compute nodes to access the same files.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Slurm",
+      "definition": "A workload manager and job scheduler commonly used on HPC clusters to allocate resources and run batch jobs.",
+      "stages": [
+        "Problem Definition & Planning",
+        "Data Preparation",
+        "Model Training & Tuning",
+        "Model Application"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1",
+        "id_2",
+        "id_4",
+        "id_6"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Job scheduler",
+          "sort_order": 1
+        },
+        {
+          "label": "Used for",
+          "term": "HPC",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "smartnoise-synth",
+      "definition": "A Python library for generating synthetic tabular [datasets](#dataset) using differential privacy. It allows researchers to create artificial data for analysis and sharing while limiting disclosure of information from the original dataset.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Used for",
+          "term": "Differential privacy",
+          "sort_order": 2
+        },
+        {
+          "label": "Used for",
+          "term": "Synthetic data",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Sociotechnical system",
+      "definition": "A system in which people, processes, organizations, and technology interact to produce outcomes. Understanding or improving such a system requires considering both its social and technical components.",
+      "stages": [
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Cross-Cutting Considerations",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_8"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Software stack",
+      "definition": "The collection of programming languages, libraries, applications, operating-system components, and infrastructure used to perform a workflow.",
+      "stages": [
+        "Data Preparation",
+        "Benchmarking, QC & Optimization"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2",
+        "id_5"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "spaCy",
+      "definition": "A Python library for natural-language processing.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Used for",
+          "term": "NLP",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Stakeholder mapping",
+      "definition": "Identifying people and groups with an interest in a project and clarifying their roles and needs. These may include researchers, intended users, collaborators, institutional offices, and support staff. Mapping stakeholders early helps identify requirements and approvals that might otherwise emerge later.",
+      "stages": [
+        "Problem Definition & Planning"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Statistical summary",
+      "definition": "A compact description of a [dataset](#dataset) using measures such as counts, averages, medians, ranges, variances, or distributions.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Storage optimization",
+      "definition": "Organizing or transforming data to reduce storage use or improve read, write, and query performance.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Success criteria",
+      "definition": "Conditions agreed upon in advance to determine whether a project has met its scientific, pedagogical, or operational goals. Defining the criteria for success early helps teams decide when a model meets project needs and further development is unnecessary.",
+      "stages": [
+        "Problem Definition & Planning",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1",
+        "id_8"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Support model",
+      "definition": "An agreed arrangement specifying who responds to problems, questions, and updates for a deployed model or workflow, and through which channels. Clearly defining support responsibilities and communication channels helps prevent expectations of indefinite support from individual staff.",
+      "stages": [
+        "Problem Definition & Planning"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Synthetic data",
+      "definition": "Artificially generated data designed to resemble some properties of real data without directly reproducing the original records.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Tools include",
+          "term": "Faker",
+          "sort_order": 2
+        },
+        {
+          "label": "Tools include",
+          "term": "smartnoise-synth",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Technical feasibility",
+      "definition": "An assessment of whether a proposed approach can actually be carried out with the available data, software, hardware, expertise, and time. Feasibility is often reviewed alongside policy and compliance questions before a project is approved.",
+      "stages": [
+        "Problem Definition & Planning"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1"
+      ],
+      "relationships": []
+    },
+    {
+      "term": "Test set",
+      "definition": "A separate portion of a dataset reserved for evaluating a model's final performance on data not used for training or tuning. Keeping the test set separate from the training and validation sets helps ensure an independent assessment of [model performance](#model-performance).",
+      "stages": [
+        "Benchmarking, QC & Optimization"
+      ],
+      "first_stage": "Benchmarking, QC & Optimization",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_5"
+      ],
+      "relationships": [
+        {
+          "label": "Part of",
+          "term": "Dataset",
+          "sort_order": 1
+        },
+        {
+          "label": "Compare to",
+          "term": "Training set",
+          "sort_order": 4
+        },
+        {
+          "label": "Compare to",
+          "term": "Validation set",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "Text tokenization",
+      "definition": "Splitting text into smaller units—such as words, subwords, or characters—for processing by language models or other NLP systems.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Technique for",
+          "term": "NLP",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "tidyverse",
+      "definition": "A collection of R packages designed for data import, cleaning, transformation, visualization, and analysis.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Used for",
+          "term": "Exploratory data analysis",
+          "sort_order": 2
+        }
+      ]
+    },
+    {
+      "term": "Time-series data",
+      "definition": "Observations recorded in temporal order, often at regular intervals.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "manual",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Data type",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Tracked transformation",
+      "definition": "A documented and versioned change applied to data, such as filtering, [normalization](#normalization), labeling, or [feature](#feature) creation.",
+      "stages": [
+        "Data Preparation"
+      ],
+      "first_stage": "Data Preparation",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_2"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Data transformation",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Training set",
+      "definition": "The portion of a dataset used to train a model by adjusting its parameters based on the examples provided. Keeping the training set separate from the validation and test sets helps prevent evaluation results from being influenced by data used to train the model.",
+      "stages": [
+        "Model Training & Tuning"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_4"
+      ],
+      "relationships": [
+        {
+          "label": "Part of",
+          "term": "Dataset",
+          "sort_order": 1
+        },
+        {
+          "label": "Compare to",
+          "term": "Test set",
+          "sort_order": 4
+        },
+        {
+          "label": "Compare to",
+          "term": "Validation set",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "Transformer",
+      "definition": "A model architecture that uses attention mechanisms to weigh the relationships among elements of an input sequence. Most current language, vision, and multimodal [foundation models](#foundation-model) are based on this architecture.",
+      "stages": [
+        "Model Selection & Development",
+        "Model Training & Tuning"
+      ],
+      "first_stage": "Model Selection & Development",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_3",
+        "id_4"
+      ],
+      "relationships": [
+        {
+          "label": "Type of",
+          "term": "Model architecture",
+          "sort_order": 1
+        },
+        {
+          "label": "Types include",
+          "term": "BERT",
+          "sort_order": 1
+        }
+      ]
+    },
+    {
+      "term": "Underfitting",
+      "definition": "When a model is too simple, or trained too briefly, to capture the patterns in its training data. An underfitted model performs poorly on both its training data and new data.",
+      "stages": [
+        "Benchmarking, QC & Optimization"
+      ],
+      "first_stage": "Benchmarking, QC & Optimization",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_5"
+      ],
+      "relationships": [
+        {
+          "label": "Compare to",
+          "term": "Overfitting",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "Validation set",
+      "definition": "A separate portion of a dataset used during model development to evaluate performance and guide tuning decisions. Keeping the validation set separate from the training and tests set allows researchers to tune the model without using data reserved for final evaluation.",
+      "stages": [
+        "Model Training & Tuning"
+      ],
+      "first_stage": "Model Training & Tuning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_4"
+      ],
+      "relationships": [
+        {
+          "label": "Part of",
+          "term": "Dataset",
+          "sort_order": 1
+        },
+        {
+          "label": "Compare to",
+          "term": "Test set",
+          "sort_order": 4
+        },
+        {
+          "label": "Compare to",
+          "term": "Training set",
+          "sort_order": 4
+        }
+      ]
+    },
+    {
+      "term": "Version control",
+      "definition": "A system for tracking changes to code, data, configuration, and other project files over time so that specific versions can be identified and restored. Version control supports documenting project history and connecting results to the materials used to produce them. Agreeing on version control practices at the outset avoids having to reconstruct project history later.",
+      "stages": [
+        "Problem Definition & Planning",
+        "Benchmarking, QC & Optimization",
+        "Results & Reporting",
+        "Cross-Cutting Considerations"
+      ],
+      "first_stage": "Problem Definition & Planning",
+      "stage_source": "automatic",
+      "stage_ids": [
+        "id_1",
+        "id_5",
+        "id_7",
+        "id_8"
+      ],
+      "relationships": [
+        {
+          "label": "Types include",
+          "term": "Data version control",
+          "sort_order": 1
+        },
+        {
+          "label": "Supports",
+          "term": "Reproducibility",
+          "sort_order": 2
+        },
+        {
+          "label": "Tools include",
+          "term": "Git",
+          "sort_order": 2
+        }
+      ]
+    }
+  ]
+}

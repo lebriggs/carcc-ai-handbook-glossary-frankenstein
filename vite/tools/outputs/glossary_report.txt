@@ -1,0 +1,80 @@
+Glossary generation report — 2026-11-04
+
+Glossary terms exported: 211
+Terms found in lifecycle chapters: 180
+Terms assigned manually: 31
+Terms without any stage: 0
+JSON output: glossary.json
+First term: Accelerator
+Last term: Version control
+
+LIFECYCLE STAGE COUNTS
+  Problem Definition & Planning: 35 glossary terms
+  Data Preparation: 86 glossary terms
+  Model Selection & Development: 31 glossary terms
+  Model Training & Tuning: 41 glossary terms
+  Benchmarking, QC & Optimization: 40 glossary terms
+  Model Application: 30 glossary terms
+  Results & Reporting: 20 glossary terms
+  Cross-Cutting Considerations: 45 glossary terms
+
+CURATED RELATIONSHIPS
+Parent–child relationships imported: 114
+Peer relationships imported: 35
+Glossary terms with relationships: 145
+  Alternative method / Alternative methods: 3
+  Checks for: 10
+  Compare to: 19
+  Parts include: 15
+  Produces: 3
+  Related: 13
+  Supported by: 12
+  Techniques include: 18
+  Tools include: 23
+  Types include: 31
+  Visualizations include: 2
+
+DEFINITION CROSS-LINKS
+Automatic cross-links added: 91
+Definitions containing eligible cross-links: 73
+Curated relationship pairs found in definitions (excluded): 56
+First-occurrence limit per definition: 1 (0 means unlimited)
+
+MANUAL STAGE ASSIGNMENTS
+  AI/ML workflow | Data Preparation
+  Categorical data | Data Preparation
+  Checkpointing | Model Training & Tuning
+  Data acquisition | Data Preparation
+  Data aggregation | Data Preparation
+  Data bias | Data Preparation
+  Data distribution | Data Preparation
+  Data reuse | Problem Definition & Planning | Data Preparation | Results & Reporting
+  Data type | Data Preparation
+  Data validation | Data Preparation
+  Data visualization | Data Preparation | Results & Reporting
+  De-identification | Data Preparation
+  Dimensionality reduction | Data Preparation
+  Encryption | Data Preparation
+  Ensemble model | Model Selection & Development
+  Feature encoding | Data Preparation
+  Go/No-Go decision point | Problem Definition & Planning
+  Job scheduler | Problem Definition & Planning
+  Loss function | Model Training & Tuning
+  Mixed data | Data Preparation
+  Model license | Model Selection & Development
+  Model weights | Model Selection & Development
+  Multimodal data | Data Preparation
+  Numerical data | Data Preparation
+  Open-weight model | Model Selection & Development
+  Parallel processing | Data Preparation
+  PI | Problem Definition & Planning
+  Pipeline monitoring | Data Preparation
+  POSIX filesystem | Data Preparation
+  Storage optimization | Data Preparation
+  Time-series data | Data Preparation
+
+UNASSIGNED TERMS
+  None
+
+MANUAL ASSIGNMENTS IGNORED (AUTOMATIC MATCHES EXIST)
+  None

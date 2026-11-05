@@ -1,0 +1,35 @@
+# Manual stage assignments for glossary terms not found in handbook chapters.
+# Format: Canonical term | Handbook stage
+# Source: glossary_tabbed_list.docx (original stage grouping).
+
+AI/ML workflow | Data Preparation
+Categorical data | Data Preparation
+Checkpointing | Model Training & Tuning
+Data acquisition | Data Preparation
+Data aggregation | Data Preparation
+Data bias | Data Preparation
+Data distribution | Data Preparation
+Data reuse | Problem Definition & Planning | Data Preparation | Results & Reporting
+Data type | Data Preparation
+Data validation | Data Preparation
+Data visualization | Data Preparation | Results & Reporting
+De-identification | Data Preparation
+Dimensionality reduction | Data Preparation
+Encryption | Data Preparation
+Ensemble model | Model Selection & Development
+Feature encoding | Data Preparation
+Go/No-Go decision point | Problem Definition & Planning
+Job scheduler | Problem Definition & Planning
+Loss function | Model Training & Tuning
+Mixed data | Data Preparation
+Model license | Model Selection & Development
+Model weights | Model Selection & Development
+Multimodal data | Data Preparation
+Numerical data | Data Preparation
+Open-weight model | Model Selection & Development
+Parallel processing | Data Preparation
+PI | Problem Definition & Planning
+Pipeline monitoring | Data Preparation
+POSIX filesystem | Data Preparation
+Storage optimization | Data Preparation
+Time-series data | Data Preparation

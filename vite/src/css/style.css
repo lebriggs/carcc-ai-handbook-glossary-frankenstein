@@ -1,0 +1,214 @@
+/* Styles for the CaRCC Glossary Explorer. */
+
+/* Match the handbook typography while retaining the existing Ionic styling. */
+:root {
+  --ion-font-family: "Roboto", "Helvetica Neue", sans-serif;
+}
+
+
+/* The page is full-width; the card list has a comfortable reading width. */
+.glossary-page {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px 16px 48px;
+}
+
+.glossary-list {
+  max-width: 840px;
+  margin-inline: auto;
+}
+
+.glossary-page-title {
+  margin: 4px 0 22px;
+  font-size: clamp(2.25rem, 5vw, 3rem);
+  font-weight: 300;
+  color: #707070;
+  text-align: center;
+}
+
+/* Align the instructions and search with the A–Z letter headings. */
+.glossary-search-area {
+  width: 100%;
+  max-width: 840px;
+  margin-inline: auto;
+}
+
+/* Restore native list markers within Ionic's CSS reset. */
+.glossary-instructions {
+  list-style: disc;
+  padding-left: 12px;
+  margin: 0 0 8px;
+}
+
+.glossary-instructions li {
+  padding-block: 6px;
+}
+
+/* Flat Ionic searchbar with the tested thin blue outline. */
+.glossary-term-search {
+  width: 100%;
+  max-width: 420px;
+  margin-inline: 0;
+  padding-inline: 0;
+  --box-shadow: 0 0 0 1px var(--ion-color-primary);
+}
+
+/* On mobile, keep the searchbar a little narrower without affecting desktop. */
+@media (max-width: 600px) {
+  .glossary-term-search {
+    width: 92%;
+    margin-inline: auto;
+  }
+}
+
+/* Match the handbook's alphabet headings and their subtle divider line. */
+.glossary-letter-section {
+  scroll-margin-top: 16px;
+  margin-bottom: 30px;
+}
+
+.glossary-letter-heading {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid #e0e0e0;
+  color: #262626;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.glossary-card-grid {
+  width: 100%;
+  max-width: 800px;
+  margin-inline: auto;
+  padding: 0;
+}
+
+.glossary-card-layout {
+  width: 100%;
+  margin: 0 auto;
+  padding: 12px 0;
+  box-sizing: border-box;
+  --ion-item-border-color: #b0b0b0;
+}
+
+.glossary-card-layout ion-card {
+  margin: 0;
+  border: 1.25px solid #888888;
+  background: #fdfdfd;
+  --ion-item-background: transparent;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.12);
+  scroll-margin-top: 16px;
+}
+
+/* Let the definition remain comfortably readable. */
+.glossary-card-layout ion-card-title {
+  font-size: 28px;
+  color: #2F6FE4;
+  --color: #2F6FE4;
+}
+
+.glossary-card-layout ion-card-content {
+  color: #222222;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.glossary-card-layout .glossary-definition p {
+  font-size: 16px;
+  color: #222222;
+  line-height: 1.5;
+}
+
+.glossary-definition p:first-child {
+  margin-top: 0;
+}
+
+.glossary-definition p:last-child {
+  margin-bottom: 0;
+}
+
+/* Small section headings distinguish metadata from the definition. */
+.glossary-card-section {
+  margin-top: 22px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.glossary-section-heading {
+  margin: 0 0 12px;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+
+/* Let Ionic draw the outlined chips. */
+.glossary-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+}
+
+.glossary-chip-list ion-chip {
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Long lifecycle names can wrap on narrower screens. */
+.glossary-chip-list ion-label {
+  white-space: normal;
+}
+
+.glossary-relationship-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 12px;
+  row-gap: 7px;
+}
+
+.glossary-relationship-row + .glossary-relationship-row {
+  margin-top: 12px;
+}
+
+.glossary-relationship-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.glossary-relationship-chips a {
+  color: var(--ion-color-primary);
+  text-decoration: none;
+}
+
+.glossary-relationship-chips a:hover,
+.glossary-relationship-chips a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Match the handbook's target highlight for a followed glossary link. */
+.glossary-card-layout ion-card:target {
+  border-left: 2px solid #4057D9;
+}
+
+/* Match the handbook's compact title bar. */
+ion-header ion-toolbar {
+  --min-height: 48px;
+}
+
+ion-header ion-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+ion-header ion-title > span {
+  max-width: 1220px;
+  margin-inline: auto;
+}
+
