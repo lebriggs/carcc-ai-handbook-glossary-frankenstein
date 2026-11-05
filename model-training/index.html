@@ -1,0 +1,1024 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://lebriggs.github.io/carcc-ai-handbook-glossary-frankenstein/model-training/">
+      
+      
+        <link rel="prev" href="../model-selection/">
+      
+      
+        <link rel="next" href="../benchmarking/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Model Training & Tuning - The CaRCC AI Facilitation Handbook - Frankenstein</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/style.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#model-training-and-tuning" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="The CaRCC AI Facilitation Handbook - Frankenstein" class="md-header__button md-logo" aria-label="The CaRCC AI Facilitation Handbook - Frankenstein" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The CaRCC AI Facilitation Handbook - Frankenstein
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Model Training & Tuning
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="The CaRCC AI Facilitation Handbook - Frankenstein" class="md-nav__button md-logo" aria-label="The CaRCC AI Facilitation Handbook - Frankenstein" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    The CaRCC AI Facilitation Handbook - Frankenstein
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../problem-definition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problem Definition & Planning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Preparation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model-selection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model Selection & Development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model Training & Tuning
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model Training & Tuning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definition
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-of-specific-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples of Specific Tasks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-tasks-and-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Tasks and Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-are-rcd-resources-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When Are RCD Resources Needed?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rcd-challenges-implications-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RCD Challenges, Implications &amp; Solutions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-tricks-and-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips, Tricks, and Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rcd-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RCD Considerations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selected-learning-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selected Learning Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../benchmarking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Benchmarking, QC & Optimization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model-application/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model Application
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../results-reporting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Results & Reporting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cross-cutting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cross-Cutting Considerations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary Test Cases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definition
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-of-specific-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples of Specific Tasks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-tasks-and-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Tasks and Tools
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-are-rcd-resources-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When Are RCD Resources Needed?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rcd-challenges-implications-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RCD Challenges, Implications &amp; Solutions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-tricks-and-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips, Tricks, and Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rcd-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        RCD Considerations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selected-learning-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selected Learning Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="model-training-and-tuning">Model Training and Tuning</h1>
+<h2 id="definition">Definition</h2>
+<p>Optimizing <a class="glossary-link" href="../glossary/#model-parameters"><abbr title="The numerical values inside a model that are adjusted during training and that determine how the model produces its outputs. [...]">model parameters</abbr></a> and <a class="glossary-link" href="../glossary/#hyperparameter"><abbr title="A setting that controls how a model is trained but is not learned from the data, such as the learning rate, batch size, or number of epochs. [...]">hyperparameters</abbr></a> through iterative learning to
+enable a model to generalize from data; includes configuring, executing and
+improving the training process.</p>
+<h2 id="examples-of-specific-tasks">Examples of Specific Tasks</h2>
+<ul>
+<li>Training a CNN on medical images: Build a CNN in PyTorch that learns to detect
+  pneumonia from chest X-rays. Chest-X-ray <a class="glossary-link" href="../glossary/#dataset"><abbr title="A collection of related data assembled for analysis, machine learning, or other research purposes. [...]">datasets</abbr></a> typically provide grayscale
+  images labelled "NORMAL" or "PNEUMONIA". These images contain subtle patterns
+  distinguishing healthy lungs from pneumonia and CNN's convolutional layers
+  learn to identify those patterns. Due to high-resolution images and large
+  datasets, training is accelerated on <a class="glossary-link" href="../glossary/#gpu"><abbr title="A graphics processing unit (GPU) is a processor capable of performing many operations in parallel and is often used for machine learning workloads.">GPU</abbr></a>-enabled <a class="glossary-link" href="../glossary/#hpc"><abbr title="High-performance computing (HPC) refers to computing infrastructure designed to process large or complex workloads using powerful systems, parallelism, and specialized resources.">HPC</abbr></a> resources.</li>
+<li><a class="glossary-link" href="../glossary/#fine-tuning"><abbr title="Further training an existing pretrained AI model on additional data to adapt it to a particular task or research domain. [...]">Fine-tuning</abbr></a> a sentiment classifier: Use a pre-trained <a class="glossary-link" href="../glossary/#transformer"><abbr title="A model architecture that uses attention mechanisms to weigh the relationships among elements of an input sequence. [...]">transformer</abbr></a> (e.g., <a class="glossary-link" href="../glossary/#bert"><abbr title="BERT (Bidirectional Encoder Representations from Transformers) is a transformer-based language model architecture that can be adapted for tasks such as text classification and sentiment analysis.">BERT</abbr></a>)
+  and fine-tune it on a sentiment-labelled review dataset such as IMDb. The IMDb
+  dataset contains around 100 k movie reviews labeled positive or negative.
+  Fine-tuning BERT on such a dataset adapts its language understanding to the
+  sentiment classification task, but the model's computational requirements are
+  high, so fine-tuning is often performed on GPU-enabled HPC resources</li>
+<li>Tuning <a class="glossary-link" href="../glossary/#dropout"><abbr title="A regularization technique that randomly ignores a portion of a model's units during each training step. [...]">dropout</abbr></a> and <a class="glossary-link" href="../glossary/#batch-size"><abbr title="The number of training examples a model processes before its parameters are updated. [...]">batch size</abbr></a> for better <a class="glossary-link" href="../glossary/#generalization"><abbr title="How well a model performs on data it has not seen before. [...]">generalization</abbr></a>: Dropout randomly
+  disables a fraction of neurons during training, forcing the network to learn
+  more generalized <a class="glossary-link" href="../glossary/#feature"><abbr title="An input variable, attribute, or measurable property used by a machine learning model.">features</abbr></a> and reducing <a class="glossary-link" href="../glossary/#overfitting"><abbr title="When a model learns its training data too closely, including patterns that do not generalize to new data. [...]">overfitting</abbr></a>. Selecting an appropriate
+  dropout rate (often between 0.2 and 0.5) and adjusting batch size are both
+  crucial: small batch sizes introduce noise in gradient updates, which acts as
+  a form of <a class="glossary-link" href="../glossary/#regularization"><abbr title="Techniques that constrain a model during training to discourage it from fitting noise in the training data. [...]">regularization</abbr></a> and can improve generalization while also reducing
+  memory requirements. Larger batches converge faster but risk overfitting, so
+  tuning involves balancing these effects.</li>
+<li>Conducting grid or Bayesian hyper-parameter search: To select optimal
+  learning-rate and weight-decay values, practitioners often use <a class="glossary-link" href="../glossary/#grid-search"><abbr title="A hyperparameter search that evaluates every combination of a predefined set of values. [...]">grid search</abbr></a> or
+  <a class="glossary-link" href="../glossary/#bayesian-optimization"><abbr title="A hyperparameter search that builds a probabilistic model of how settings affect performance and uses it to choose which combination to try next. [...]">Bayesian optimization</abbr></a>. In grid search, you define sets of possible values
+  (e.g., <a class="glossary-link" href="../glossary/#learning-rate"><abbr title="The hyperparameter that controls how much a model's parameters change in response to each update during training. [...]">learning rates</abbr></a> [0.001, 0.01, 0.1] and batch sizes [16, 32, 64]) and
+  train a model on every combination; although exhaustive, this approach becomes
+  computationally expensive with many parameters. Bayesian optimization builds a
+  probabilistic model of the objective function and sequentially explores
+  promising hyper-parameter regions, reducing the number of training runs.
+  Hyper-parameter search is often automated with frameworks like Optuna or Ray
+  Tune.</li>
+</ul>
+<h2 id="user-tasks-and-tools">User Tasks and Tools</h2>
+<table>
+<thead>
+<tr>
+<th>Task Area</th>
+<th>Description</th>
+<th>Tools/Resources</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Configuring training</strong></td>
+<td>Set hyperparameters like learning rate, batch size, and <a class="glossary-link" href="../glossary/#epoch"><abbr title="One complete pass through the training dataset. [...]">epochs</abbr></a> to control optimization</td>
+<td>Python, TensorFlow, PyTorch, Keras, <a class="glossary-link" href="../glossary/#scikit-learn"><abbr title="A Python library providing tools for data preprocessing, feature engineering, modeling, and evaluation.">scikit-learn</abbr></a></td>
+</tr>
+<tr>
+<td><strong>Monitoring training</strong></td>
+<td>Track loss curves and metrics for the <a class="glossary-link" href="../glossary/#training-set"><abbr title="The portion of a dataset used to train a model by adjusting its parameters based on the examples provided. [...]">training set</abbr></a> and <a class="glossary-link" href="../glossary/#validation-set"><abbr title="A separate portion of a dataset used during model development to evaluate performance and guide tuning decisions. [...]">validation set</abbr></a> to detect slow <a class="glossary-link" href="../glossary/#convergence"><abbr title="The point at which further training produces little or no improvement in a model's loss or evaluation metrics. [...]">convergence</abbr></a> or over-/under-fitting</td>
+<td>Weights &amp; <a class="glossary-link" href="../glossary/#bias"><abbr title="Systematic distortion or error in data, methods, or model results that can affect accuracy or produce unfair outcomes. [...]">Biases</abbr></a>, MLflow, Comet.ml, SageMaker/Vertex AI dashboards</td>
+</tr>
+<tr>
+<td><strong>Improving stability &amp; generalization</strong></td>
+<td>Apply regularization, dropout, <a class="glossary-link" href="../glossary/#early-stopping"><abbr title="Ending a training run once performance on the validation set stops improving. [...]">early stopping</abbr></a>, and mixed-precision techniques to prevent over-fitting.</td>
+<td><a class="glossary-link" href="../glossary/#jupyter-notebook"><abbr title="An interactive document that combines executable code, outputs, visualizations, and explanatory text.">Jupyter Notebooks</abbr></a>, VS Code, PyCharm, Keras/TensorFlow callbacks</td>
+</tr>
+<tr>
+<td><strong>Training execution</strong></td>
+<td>Launch jobs on single or multiple GPUs/nodes and manage resources and checkpoints.</td>
+<td><a class="glossary-link" href="../glossary/#slurm"><abbr title="A workload manager and job scheduler commonly used on HPC clusters to allocate resources and run batch jobs.">SLURM</abbr></a>, Kubernetes, Singularity/Apptainer, Conda/Mamba</td>
+</tr>
+<tr>
+<td><strong>Hyperparameter search &amp; experimentation</strong></td>
+<td>Define and explore hyperparameter spaces via grid, random, or Bayesian search; run multiple trials.</td>
+<td>Ray Tune, Optuna, Hyperopt, Google Cloud <a class="glossary-link" href="../glossary/#automl"><abbr title="Automated machine learning (AutoML) uses tools and services that automate parts of model development, such as hyperparameter search, architecture selection, or preprocessing choices. [...]">AutoML</abbr></a>, Azure AutoML</td>
+</tr>
+<tr>
+<td><strong>Applying search strategies</strong></td>
+<td>Use grid search, <a class="glossary-link" href="../glossary/#random-search"><abbr title="A hyperparameter search that samples combinations of values at random rather than testing all of them. [...]">random search</abbr></a>, Bayesian optimization or <a class="glossary-link" href="../glossary/#population-based-training"><abbr title="A tuning approach that trains several models at the same time and periodically copies and adjusts the settings of the better-performing ones. [...]">population-based training</abbr></a> to refine models.</td>
+<td>Ray Tune, Optuna, Hyperopt, <a class="glossary-link" href="../glossary/#model-repository"><abbr title="A managed service for publishing, discovering, and downloading trained models together with their weights and documentation. [...]">Model repositories</abbr></a> such as Hugging Face Hub</td>
+</tr>
+</tbody>
+</table>
+<h2 id="when-are-rcd-resources-needed">When Are RCD Resources Needed?</h2>
+<ul>
+<li>The dataset or model is too large to train on local resources, requiring
+  multi-GPU or multi-node distribution.</li>
+<li>Training jobs run for days or weeks, and local hardware lacks the reliability
+  or fault tolerance needed.</li>
+<li>Hyperparameter searches or AutoML experiments generate dozens or hundreds of
+  concurrent jobs that require HPC resources to be executed in a timely manner.</li>
+<li>During <a class="glossary-link" href="../glossary/#model-training"><abbr title="The process of adjusting a model's parameters using data so that it learns patterns and can perform tasks. [...]">model training</abbr></a> and tuning, I/O-intensive workloads (e.g., streaming
+  TB-scale images or sequences) demand high-bandwidth parallel file systems to
+  prevent <a class="glossary-link" href="../glossary/#data-pipeline"><abbr title="A sequence of automated or semi-automated steps that moves and transforms data from its source to its destination or analysis-ready form.">data pipelines</abbr></a> from becoming a <a class="glossary-link" href="../glossary/#bottleneck"><abbr title="A component or step that limits the overall speed, scale, or performance of a workflow.">bottleneck</abbr></a>.</li>
+<li>Memory and storage requirements exceed local capacity, or checkpoints consume
+  terabytes of fast storage.</li>
+<li>Cloud compute is cost-prohibitive for sustained experimentation, making
+  on-premises RCD resources more economical.</li>
+</ul>
+<h2 id="rcd-challenges-implications-solutions">RCD Challenges, Implications &amp; Solutions</h2>
+<table>
+<thead>
+<tr>
+<th>Challenge</th>
+<th>RCD Implication</th>
+<th>Solutions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data &amp; model growth</td>
+<td>Large datasets (GB→TB) and rapidly growing model sizes overwhelm local storage and single-GPU memory.</td>
+<td>Provide high-bandwidth parallel file systems; adopt distributed data loaders and model-parallel training frameworks.</td>
+</tr>
+<tr>
+<td>Compute demands</td>
+<td>Long training runs (days→weeks) and multi-GPU distribution increase the chance of hardware failures and require robust synchronization.</td>
+<td>Use high-speed interconnects (NVLink/InfiniBand); schedule frequent checkpoints; budget for compute costs.</td>
+</tr>
+<tr>
+<td>Experimentation complexity</td>
+<td>Large hyperparameter spaces make manual tuning infeasible and generate numerous concurrent jobs.</td>
+<td>Leverage automated Hyper Parameter Optimization (<a class="glossary-link" href="../glossary/#hpo"><abbr title="Hyperparameter optimization (HPO) is the process of systematically searching for hyperparameter values that produce the best model performance. [...]">HPO</abbr></a>) tools and job arrays; prioritize and batch experiments; monitor resource consumption</td>
+</tr>
+<tr>
+<td>Compute architecture</td>
+<td>Choosing between different GPU types affects throughput, cost and feasibility; limited <a class="glossary-link" href="../glossary/#cpu"><abbr title="A central processing unit (CPU) is the general-purpose processor used to execute program instructions.">CPU</abbr></a>-to-GPU bandwidth creates bottlenecks.</td>
+<td>Select hardware with adequate memory; use NVLink when possible; optimize data placement and prefetching.</td>
+</tr>
+<tr>
+<td>Memory &amp; storage</td>
+<td>Model checkpoints and streaming large datasets demand substantial fast storage and high I/O throughput.</td>
+<td>Employ burst buffers or local NVMe caches; compress checkpoints; stage data ahead of jobs.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tips-tricks-and-troubleshooting">Tips, Tricks, and Troubleshooting</h2>
+<ul>
+<li>Design training workflows with <a class="glossary-link" href="../glossary/#scalability"><abbr title="The ability of a computing system or workflow to handle growing workloads while maintaining acceptable performance. [...]">scalability</abbr></a> in mind—plan for distributed data
+  and model parallelism before starting.</li>
+<li>Track experiments systematically using tools like MLflow or Weights &amp; Biases;
+  include hyperparameters, metrics and artifacts.</li>
+<li>Monitor I/O and compute utilization to identify bottlenecks; adjust batch
+  sizes and prefetch settings accordingly.</li>
+<li>Containerize environments with Apptainer (formerly singularity) and lock
+  package versions to ensure <a class="glossary-link" href="../glossary/#reproducibility"><abbr title="The ability to recreate computational research results by repeating a documented workflow with the same data or inputs. [...]">reproducibility</abbr></a>.</li>
+<li>Checkpoint frequently and test restore procedures to minimize progress loss
+  during hardware failures.</li>
+</ul>
+<h2 id="rcd-considerations">RCD Considerations</h2>
+<ul>
+<li>GPU type and count: availability of high-memory GPUs (A100/H100) and
+  interconnects (NVLink/InfiniBand).</li>
+<li>Storage performance: local NVMe vs. parallel file systems (Lustre/GPFS) vs.
+  <a class="glossary-link" href="../glossary/#object-store"><abbr title="A storage system that manages data as objects, typically containing data, metadata, and a unique identifier rather than a traditional hierarchical file path.">object stores</abbr></a>; dataset size and file count.</li>
+<li>Data security and compliance: encrypt data at rest/in transit; ensure <a class="glossary-link" href="../glossary/#pii"><abbr title="Personally identifiable information (PII) is information that can identify a person directly or in combination with other data. [...]">PII</abbr></a>
+  (Personally Identifiable Information) or controlled-unclassified information
+  is handled appropriately.</li>
+<li>Scheduling and fairness: prioritize critical workloads while allowing
+  exploratory jobs to run with preemptible resources.</li>
+<li>Cost management: monitor energy consumption and cloud/on-prem costs; select
+  efficient hardware.</li>
+<li>Software &amp; algorithmic efficiency: use optimized libraries, mixed precision
+  training.</li>
+</ul>
+<h2 id="selected-learning-resources">Selected Learning Resources</h2>
+<ul>
+<li><a href="https://www.datacamp.com/tutorial/parameter-optimization-machine-learning-models">Hyperparameter Optimization in Machine Learning
+  Models</a>
+  (DataCamp) - A tutorial explaining what hyperparameters are, why tuning them
+  matters, and introducing common search strategies.</li>
+<li>Bayesian Optimization: A more efficient alternative to grid or random search.
+  <a href="https://gpyopt.readthedocs.io/en/latest/">GPyOpt</a> (GitHub): A Python
+  framework for Bayesian Optimization.
+  <a href="https://github.com/HIPS/Spearmint">Spearmint</a> (GitHub): Another well-known
+  library for this method.</li>
+<li>Gradient-Based Optimization: Used for models with differentiable
+  hyperparameters. <a href="https://pytorch.org/docs/stable/autograd.html">PyTorch Documentation on
+  AutoGrad</a> explains the
+  automatic differentiation engine that makes this possible in PyTorch.
+  <a href="https://www.tensorflow.org/guide/autodiff">TensorFlow Documentation on
+  Gradients</a> provides a guide to
+  automatic differentiation in TensorFlow.</li>
+<li><a href="https://docs.ray.io/en/latest/tune/examples/pbt_guide.html">Population-Based Training
+  (PBT)</a>: Combines
+  hyperparameter tuning and model training.</li>
+<li><a href="https://www.deeplearning.ai/short-courses/finetuning-large-language-models/">Finetuning Large Language
+  Models</a>:
+  A short course by DeepLearning.AI teaching how to finetune large language
+  models: when to use fine-tuning vs prompt engineering, how to prepare data,
+  train, evaluate, and deploy your own <a class="glossary-link" href="../glossary/#llm"><abbr title="A large language model (LLM) is trained on large collections of text to interpret and generate natural language. [...]">LLM</abbr></a> with updated weights.</li>
+<li><a href="http://deeplearningbook.org/">Deep Learning</a> (Goodfellow, Bengio &amp;
+  Courville): the full text of this MIT Press book is freely available online</li>
+</ul>
+<!--
+Generated: Nov 4, 2026
+
+Glossary behavior for terms listed in this file:
+Terms are matched wherever they appear in the handbook.
+By default, only the first occurrence of each glossary entry on a page is highlighted.
+Terms are not highlighted in headings, table header cells, existing links, or reference footnotes.
+
+Definitions appear as tooltips on hover on desktop.
+Format: *[term]: definition
+Case variants each need their own line.
+Plural variants each need their own line.
+
+The tooltip definition must match the beginning of the full definition in glossary.md.
+Do not manually edit this file.
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/glossary_tooltips.js"></script>
+      
+    
+  </body>
+</html>

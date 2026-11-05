@@ -1,0 +1,825 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://lebriggs.github.io/carcc-ai-handbook-glossary-frankenstein/results-reporting/">
+      
+      
+        <link rel="prev" href="../model-application/">
+      
+      
+        <link rel="next" href="../cross-cutting/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Results & Reporting - The CaRCC AI Facilitation Handbook - Frankenstein</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/style.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#results-interpretation-and-reporting" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="The CaRCC AI Facilitation Handbook - Frankenstein" class="md-header__button md-logo" aria-label="The CaRCC AI Facilitation Handbook - Frankenstein" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            The CaRCC AI Facilitation Handbook - Frankenstein
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Results & Reporting
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="The CaRCC AI Facilitation Handbook - Frankenstein" class="md-nav__button md-logo" aria-label="The CaRCC AI Facilitation Handbook - Frankenstein" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    The CaRCC AI Facilitation Handbook - Frankenstein
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../problem-definition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problem Definition & Planning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Preparation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model-selection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model Selection & Development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model-training/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model Training & Tuning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../benchmarking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Benchmarking, QC & Optimization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model-application/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model Application
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Results & Reporting
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Results & Reporting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definition
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-of-specific-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples of Specific Tasks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#researcher-and-rcd-facilitator-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Researcher and RCD Facilitator Tasks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selected-learning-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selected Learning Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cross-cutting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cross-Cutting Considerations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary Test Cases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definition
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-of-specific-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Examples of Specific Tasks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#researcher-and-rcd-facilitator-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Researcher and RCD Facilitator Tasks
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selected-learning-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selected Learning Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="results-interpretation-and-reporting">Results Interpretation and Reporting</h1>
+<h2 id="definition">Definition</h2>
+<p>Results interpretation and reporting encompasses evaluating model outputs in
+relation to research goals and domain context. This stage includes documenting
+workflows and computing environments for <a class="glossary-link" href="../glossary/#reproducibility"><abbr title="The ability to recreate computational research results by repeating a documented workflow with the same data or inputs. [...]">reproducibility</abbr></a>, communicating results
+through visualizations and reports, and preparing materials for dissemination
+and long-term preservation.</p>
+<h2 id="examples-of-specific-tasks">Examples of Specific Tasks</h2>
+<ul>
+<li>Evaluating <a class="glossary-link" href="../glossary/#model-performance"><abbr title="The degree to which a model performs as intended, assessed using metrics appropriate to the model type, intended use, and evaluation context.">model performance</abbr></a> differences across low-income and high-income
+  patient groups in a deep learning model trained to predict pediatric cancer
+  relapse risk.</li>
+<li>Creating a <a class="glossary-link" href="../glossary/#model-card"><abbr title="A document describing a trained AI model’s intended uses, training and evaluation data, performance, capabilities, risks, and known limitations. [...]">model card</abbr></a> with <a class="glossary-link" href="../glossary/#calibration-plot"><abbr title="A plot used to assess how closely a model’s predicted probabilities correspond to observed outcomes. [...]">calibration plots</abbr></a> and <a class="glossary-link" href="../glossary/#precisionrecall-curve"><abbr title="A plot used to evaluate a classification model by showing the tradeoff between precision and recall. [...]">precision–recall curves</abbr></a>
+  generated in <a class="glossary-link" href="../glossary/#scikit-learn"><abbr title="A Python library providing tools for data preprocessing, feature engineering, modeling, and evaluation.">scikit-learn</abbr></a> to document the performance and limitations of a
+  pediatric cancer relapse prediction model.</li>
+<li>Preparing pediatric cancer clinical trial <a class="glossary-link" href="../glossary/#dataset"><abbr title="A collection of related data assembled for analysis, machine learning, or other research purposes. [...]">datasets</abbr></a> and supporting
+  documentation for <a class="glossary-link" href="../glossary/#controlled-access-deposit"><abbr title="The submission of research data to a repository where access is restricted to approved users rather than made openly available. [...]">controlled-access deposit</abbr></a> in dbGaP following publication of
+  a pediatric cancer relapse prediction model.</li>
+</ul>
+<h2 id="researcher-and-rcd-facilitator-tasks">Researcher and RCD Facilitator Tasks</h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Researcher Tasks</th>
+<th>RCD Facilitator Support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Results Evaluation &amp; Interpretation</td>
+<td>Evaluate model outputs in relation to the research goals and domain context, including model performance, limitations, uncertainty, and potential <a class="glossary-link" href="../glossary/#bias"><abbr title="Systematic distortion or error in data, methods, or model results that can affect accuracy or produce unfair outcomes. [...]">bias</abbr></a> in the findings.</td>
+<td>Assist researchers with running and reproducing <a class="glossary-link" href="../glossary/#model-evaluation"><abbr title="The process of assessing model performance and behavior using data, metrics, and analyses suited to its intended use. [...]">model evaluations</abbr></a> across computational environments, including support for <a class="glossary-link" href="../glossary/#benchmarking"><abbr title="The systematic evaluation and comparison of machine learning or AI models using specified datasets, tasks, metrics, and evaluation conditions. [...]">benchmarking</abbr></a>, <a class="glossary-link" href="../glossary/#interpretability"><abbr title="How well people can understand an AI or machine learning model's overall behavior and how it produces results.">interpretability</abbr></a>, and <a class="glossary-link" href="../glossary/#fairness-assessment"><abbr title="The evaluation of whether a machine learning or AI model’s outcomes meet fairness criteria appropriate to its intended context. [...]">fairness assessment</abbr></a> tools.</td>
+</tr>
+<tr>
+<td>Reproducibility &amp; Documentation</td>
+<td>Document analytical workflows, code, parameters, software environments, dependencies, and processing steps needed to reproduce or validate results. Prepare AI reporting artifacts, such as model cards, that document model performance, limitations, and intended use.</td>
+<td>Assist researchers with managing software environments, <a class="glossary-link" href="../glossary/#version-control"><abbr title="A system for tracking changes to code, data, configuration, and other project files over time so that specific versions can be identified and restored. [...]">version control</abbr></a>, <a class="glossary-link" href="../glossary/#container"><abbr title="A portable, packaged software environment containing code, dependencies, and configuration needed to run an application or workflow consistently across computing systems. [...]">containers</abbr></a>, and reproducible workflows across computational systems.</td>
+</tr>
+<tr>
+<td>Visualization &amp; Reporting</td>
+<td>Develop figures, dashboards, reports, and other outputs that communicate findings to technical and non-technical audiences.</td>
+<td>Assist researchers with selecting tools and platforms for developing dashboards, visualizations, and other interactive reporting outputs. Support hosting and sharing of these outputs across computational and collaborative environments.</td>
+</tr>
+<tr>
+<td>Dissemination &amp; Preservation</td>
+<td>Prepare datasets, code, models, and related research outputs for dissemination, reuse, or long-term preservation. Consider ethical, legal, and institutional requirements related to sharing and access.</td>
+<td>Assist researchers with <a class="glossary-link" href="../glossary/#repository"><abbr title="A managed system or service for storing, preserving, and providing access to research outputs such as data, code, images, publications, or models. [...]">repository</abbr></a> selection, <a class="glossary-link" href="../glossary/#metadata"><abbr title="Information that describes data, such as its origin, format, contents, collection conditions, ownership, or processing history.">metadata</abbr></a> requirements, and <a class="glossary-link" href="../glossary/#access-control"><abbr title="Policies, technologies, and procedures that determine who or what may access resources, under which conditions, and what actions are permitted. [...]">access controls</abbr></a> for long-term preservation of research outputs. Provide guidance on proprietary or closed file formats that may limit reuse, preservation, or <a class="glossary-link" href="../glossary/#interoperability"><abbr title="The ability of different systems, tools, or platforms to exchange and use data or functionality across environments. [...]">interoperability</abbr></a>. Recommend institutional resources for licensing guidance.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="selected-learning-resources">Selected Learning Resources</h2>
+<ul>
+<li>Creating an Executable Paper is a Journey Through Open Science by Lasser - A
+  reflective guide to publishing research articles with executable code and data
+  for reproducibility. [<a href="https://doi.org/10.1038/s42005-020-00403-4">Publisher</a>]</li>
+<li><a class="glossary-link" href="../glossary/#datasheet"><abbr title="Structured documentation describing a dataset’s origin, composition, collection methods, intended uses, limitations, and maintenance. [...]">Datasheets</abbr></a> for Datasets by Gebru et al - A classic framework for documenting
+  ML datasets. [<a href="https://doi.org/10.1145/3458723">Publisher</a>]</li>
+<li>FactSheets for AI Services by Arnold et al - A structured reporting format for
+  describing what an AI service does, how it was tested, and what users should
+  know before adoption. [<a href="https://doi.org/10.1147/JRD.2019.2942288">Publisher</a>]
+  [<a href="https://doi.org/10.48550/arXiv.1808.07261">arXiv</a>]</li>
+<li>Interpretable Machine Learning by Molnar - An open-source textbook with
+  practical methods for explaining ML predictions.
+  [<a href="https://christophm.github.io/interpretable-ml-book/">Website</a>]</li>
+<li>Model Cards for Model Reporting by Mitchell et al - A classic guide for
+  summarizing a model's purpose, performance, and limitations in a clear,
+  structured format. [<a href="https://doi.org/10.1145/3287560.3287596">Publisher</a>]
+  [<a href="https://doi.org/10.48550/arXiv.1810.03993">arXiv</a>]</li>
+<li>Ten Simple Rules for Reproducible Computational Research by Sandve et al - A
+  classic guide with actionable tips for documenting the code, data, and
+  analysis steps underlying reported results.
+  [<a href="https://doi.org/10.1371/journal.pcbi.1003285">Publisher</a>]</li>
+<li>TensorBoard: TensorFlow's Visualization Toolkit - A suite of web applications
+  for visualizing model metrics, outputs, and comparisons to aid interpretation
+  and reporting. [<a href="https://www.tensorflow.org/tensorboard">Website</a>]</li>
+<li>Yellowbrick: Machine Learning Visualization - A categorized gallery of model
+  interpretation plots with examples and usage notes for reporting and
+  diagnostics. [<a href="https://www.scikit-yb.org/en/latest/">Website</a>]</li>
+</ul>
+<!--
+Generated: Nov 4, 2026
+
+Glossary behavior for terms listed in this file:
+Terms are matched wherever they appear in the handbook.
+By default, only the first occurrence of each glossary entry on a page is highlighted.
+Terms are not highlighted in headings, table header cells, existing links, or reference footnotes.
+
+Definitions appear as tooltips on hover on desktop.
+Format: *[term]: definition
+Case variants each need their own line.
+Plural variants each need their own line.
+
+The tooltip definition must match the beginning of the full definition in glossary.md.
+Do not manually edit this file.
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/glossary_tooltips.js"></script>
+      
+    
+  </body>
+</html>
